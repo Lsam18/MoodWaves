@@ -11,14 +11,12 @@ a {
     text-decoration: none;
 }
 
-
-
 .login {
     position: relative;
-    width: 1440px;
+    width: 1420px;
     height: 1024px;
     background-color: var(--noble-black700);
-    border-radius: 24px;
+    
     overflow: hidden;
 }
 
@@ -174,8 +172,8 @@ a {
 
 .login .field {
     display: flex;
+    align-items: center; /* Center vertically */
     height: 50px;
-    align-items: center;
     gap: 12px;
     padding: 0px 16px;
     position: relative;
@@ -194,12 +192,6 @@ a {
     border-image: linear-gradient(to bottom, rgb(130, 219, 247), rgb(182, 240, 156)) 1;
 }
 
-.login .value-2 {
-    position: relative;
-    flex: 1;
-    flex-grow: 1;
-}
-
 .login .field-2 {
     display: flex;
     height: 50px;
@@ -211,24 +203,6 @@ a {
     width: 100%;
     margin-top: -1px;
     margin-bottom: -1px;
-    margin-left: -1px;
-    margin-right: -1px;
-    background-color: var(--noble-black600);
-    border-radius: 8px;
-    border: 1px solid;
-    border-color: var(--noble-black500);
-}
-
-.login .placeholder {
-    position: relative;
-    flex: 1;
-    font-family: var(--body-l-medium-font-family);
-    font-weight: var(--body-l-medium-font-weight);
-    color: var(--noble-black300);
-    font-size: var(--body-l-medium-font-size);
-    letter-spacing: var(--body-l-medium-letter-spacing);
-    line-height: var(--body-l-medium-line-height);
-    font-style: var(--body-l-medium-font-style);
 }
 
 .login .bottom {
@@ -310,6 +284,12 @@ a {
     width: 100%;
     background-color: #7636ff;
     border-radius: 12px;
+    cursor: pointer; /* Add cursor style */
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.login .button:hover {
+    background-color: #5c1ac3; /* Change background color on hover */
 }
 
 .login .value-5 {
@@ -427,4 +407,95 @@ a {
     letter-spacing: var(--heading-l-semibold-letter-spacing);
     line-height: var(--heading-l-semibold-line-height);
     font-style: var(--heading-l-semibold-font-style);
+}
+
+/* Checkbox styles */
+.login .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.login .checkbox-input {
+    display: none; /* Hide the actual checkbox */
+}
+
+.login .checkbox-icon {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    background-color: var(--noble-black600);
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: var(--noble-black500);
+    box-shadow: var(--shadow-small);
+}
+
+/* Checked state */
+.login .checkbox-input:checked + .checkbox-icon::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 14px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform-origin: center;
+    transform: rotate(45deg);
+}
+
+/* Text style */
+.login .value-3 {
+    font-family: var(--body-l-medium-font-family);
+    font-weight: var(--body-l-medium-font-weight);
+    color: var(--noble-black200);
+    font-size: var(--body-l-medium-font-size);
+    letter-spacing: var(--body-l-medium-letter-spacing);
+    line-height: var(--body-l-medium-line-height);
+    white-space: nowrap;
+    font-style: var(--body-l-medium-font-style);
+}
+
+/* Animation on hover */
+.login .checkbox-label:hover .checkbox-icon {
+    background-color: var(--noble-black500);
+}
+
+/* Hover state for checkbox */
+.login .checkbox-input:hover + .checkbox-icon {
+    background-color: var(--noble-black500);
+}
+
+/* Focus state for checkbox */
+.login .checkbox-input:focus + .checkbox-icon {
+    box-shadow: var(--shadow-small-focus);
+}
+
+/* Focus and hover state for checkbox */
+.login .checkbox-input:focus:hover + .checkbox-icon {
+    background-color: var(--noble-black500);
+}
+
+/* Animation on checked state */
+.login .checkbox-input:checked + .checkbox-icon {
+    background-color: var(--noble-black500);
+    border-color: transparent;
+    box-shadow: none;
+}
+
+/* Checked state hover */
+.login .checkbox-input:checked:hover + .checkbox-icon {
+    background-color: var(--noble-black500);
+}
+
+/* Checked state focus */
+.login .checkbox-input:checked:focus + .checkbox-icon {
+    background-color: var(--noble-black500);
 }

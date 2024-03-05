@@ -33,27 +33,34 @@
                         <img class="divider-2" src="Images/Divider.png" alt="Divider">
                     </div>
                     <div class="div">
-                        <div class="input">
-                            <div class="field">
-                                <img class="img" src="Images/mail.png" alt="Email">
-                                <div class="placeholder">Enter Your Email</div>
-                            </div>
-                        </div>
-                        <div class="input">
-                            <div class="field-2">
-                                <img class="img" src="Images/password.png" alt="Password">
-                                <div class="placeholder">Password</div>
-                            </div>
+                        <div class="field-2">
+                            
+                            <img class="img" src="Images/mail.png" alt="Email">
+                            <input type="text" class="field" placeholder="Enter Your Email">
+                            
                         </div>
                     </div>
+                    <div class="input">
+                        <div class="field-2">
+                            <img class="img" src="Images/password.png" alt="Password">
+                            <input type="password" class="field" placeholder="Password">
+                        
+                        </div>
+                    </div>
+                    
                     <div class="bottom">
                         <div class="checkbox-button">
-                            <div class="checkbox-icon"></div>
-                            <div class="value-3">Remember me</div>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="checkbox-input" id="remember-me">
+                                <div class="checkbox-icon"></div>
+                                <div class="value-3">Remember me</div>
+                            </label>
                         </div>
                         <a href=""><div class="value-4">Forgot Password?</div></a>
                     </div>
-                    <input type="button" class="button" value="Log in" style="color: white; font-weight: 600;">
+                    
+                    
+                    <input type="button" class="button" value="Log in" style="color: white; font-weight: 600;" onclick="submitForm()">
                     <div class="value-5"></div>
                     <div class="sign-up">
                         <div class="value-6">Don’t have an account?</div>
@@ -75,4 +82,11 @@
         </div>
     </div>
 </body>
+<script>
+    function submitForm() {
+    //submission logic over here!!!
+    alert("Form submitted!"); // For demonstration, showing an alert
+}
+
+</script>
 </html>
