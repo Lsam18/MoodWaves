@@ -16,7 +16,6 @@ a {
     width: 1420px;
     height: 1024px;
     background-color: var(--noble-black700);
-    
     overflow: hidden;
 }
 
@@ -86,6 +85,7 @@ a {
     align-self: stretch;
     width: 100%;
     flex: 0 0 auto;
+    color: white;
 }
 
 .login .social-login-button {
@@ -100,6 +100,7 @@ a {
     flex-grow: 1;
     background-color: var(--noble-black600);
     border-radius: 12px;
+    color: white;
 }
 
 .login .frame {
@@ -168,6 +169,7 @@ a {
     align-self: stretch;
     width: 100%;
     flex: 0 0 auto;
+    color: white;
 }
 
 .login .field {
@@ -190,6 +192,8 @@ a {
     border-color: transparent;
     box-shadow: var(--outline-heisenberg-blue);
     border-image: linear-gradient(to bottom, rgb(130, 219, 247), rgb(182, 240, 156)) 1;
+    color: white;
+    font-weight: 600;
 }
 
 .login .field-2 {
@@ -350,7 +354,7 @@ a {
     height: 1024px;
     top: 0;
     right: 0;
-    background-image: url('Images/loginpage.jpeg'); /* Path to your image */
+    background-image: url('../Images/loginpage.jpeg'); /* Path to your image */
     background-size: cover;
     background-position: center;
     z-index: 0; /* Ensure it's behind the text */
@@ -499,3 +503,16 @@ a {
 .login .checkbox-input:checked:focus + .checkbox-icon {
     background-color: var(--noble-black500);
 }
+
+/* Add hover effect to sign in with Google and Apple buttons */
+.login .social-login-button:hover {
+    background-color: #444; 
+   
+    
+}
+
+/* Add hover effect to sign in with Google and Apple links */
+.login .social-login-button a:hover {
+    color: #fff; /* Change to desired color */
+}
+
