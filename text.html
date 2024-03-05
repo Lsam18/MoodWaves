@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="social-buttons">
+      <div class="social-login-button">
+        <img class="frame" src="img/frame.svg" />
+        <div class="value">Sign In with Google</div>
+      </div>
+      <div class="social-login-button">
+        <img class="img" src="img/image.svg" />
+        <div class="value">Sign In with Apple</div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+    .social-buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+}
+
+.social-buttons .social-login-button {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 24px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: var(--noble-black600);
+  border-radius: 12px;
+}
+
+.social-buttons .frame {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.social-buttons .value {
+  position: relative;
+  width: fit-content;
+  font-family: var(--body-l-semibold-font-family);
+  font-weight: var(--body-l-semibold-font-weight);
+  color: var(--noble-black400);
+  font-size: var(--body-l-semibold-font-size);
+  letter-spacing: var(--body-l-semibold-letter-spacing);
+  line-height: var(--body-l-semibold-line-height);
+  white-space: nowrap;
+  font-style: var(--body-l-semibold-font-style);
+}
+
+.social-buttons .img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+</style>

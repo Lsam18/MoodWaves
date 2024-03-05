@@ -1,0 +1,29 @@
+/* Preloader Styles */
+.preloader {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999; /* Ensure it's on top of other content */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgb(98, 255, 0);
+    border-radius: 50%;
+    border-left-color: #fff;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

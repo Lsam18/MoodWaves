@@ -1,0 +1,454 @@
+.register {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background-color: var(--noble-black700);
+    border-radius: 24px;
+    overflow: hidden;
+  }
+  
+  .register .content {
+    display: flex;
+    flex-direction: column;
+    width: 676px;
+    align-items: flex-start;
+    gap: 64px;
+    position: absolute;
+    top: 256px;
+    left: 112px;
+  }
+  
+  .register .div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .register .text-wrapper {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--heading-XL-regular-font-family);
+    font-weight: var(--heading-XL-regular-font-weight);
+    color: var(--noble-black0);
+    font-size: var(--heading-XL-regular-font-size);
+    letter-spacing: var(--heading-XL-regular-letter-spacing);
+    line-height: var(--heading-XL-regular-line-height);
+    font-style: var(--heading-XL-regular-font-style);
+  }
+  
+  .register .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 48px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .register .row {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .register .input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+  }
+  
+  .register .label {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--body-m-medium-font-family);
+    font-weight: var(--body-m-medium-font-weight);
+    color: var(--noble-black300);
+    font-size: var(--body-m-medium-font-size);
+    letter-spacing: var(--body-m-medium-letter-spacing);
+    line-height: var(--body-m-medium-line-height);
+    font-style: var(--body-m-medium-font-style);
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  .register .field {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    gap: 12px;
+    padding: 0px 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    background-color: var(--noble-black600);
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: var(--noble-black500);
+  }
+  
+  .register .placeholder {
+    position: relative;
+    flex: 1;
+    font-family: var(--body-l-medium-font-family);
+    font-weight: var(--body-l-medium-font-weight);
+    color: var(--noble-black300);
+    font-size: var(--body-l-medium-font-size);
+    letter-spacing: var(--body-l-medium-letter-spacing);
+    line-height: var(--body-l-medium-line-height);
+    font-style: var(--body-l-medium-font-style);
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  .register .label-2 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--body-m-medium-font-family);
+    font-weight: var(--body-m-medium-font-weight);
+    color: var(--noble-black300);
+    font-size: var(--body-m-medium-font-size);
+    letter-spacing: var(--body-m-medium-letter-spacing);
+    line-height: var(--body-m-medium-line-height);
+    font-style: var(--body-m-medium-font-style);
+  }
+  
+  .register .placeholder-2 {
+    position: relative;
+    flex: 1;
+    font-family: var(--body-l-medium-font-family);
+    font-weight: var(--body-l-medium-font-weight);
+    color: var(--noble-black300);
+    font-size: var(--body-l-medium-font-size);
+    letter-spacing: var(--body-l-medium-letter-spacing);
+    line-height: var(--body-l-medium-line-height);
+    font-style: var(--body-l-medium-font-style);
+  }
+  
+  .register .checkbox-button {
+    display: flex;
+    align-items: center; /* Align items center to have checkbox and label on the same line */
+    gap: 16px; /* Add some gap between checkbox and label */
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+
+  
+  .register .checkbox-icon {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    background-color: var(--noble-black600);
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: var(--noble-black500);
+    box-shadow: var(--shadow-small);
+  }
+  
+  .register .value {
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+  }
+  
+  .register .button {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #6843ec;
+    border-radius: 12px;
+    cursor: pointer; /* Add cursor style */
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.register .button:hover {
+    background-color: #5226be; /* Change background color on hover */
+}
+  
+  .register .value-2 {
+    color: #ffffff;
+    position: relative;
+    width: fit-content;
+    font-family: var(--body-l-semibold-font-family);
+    font-weight: var(--body-l-semibold-font-weight);
+    font-size: var(--body-l-semibold-font-size);
+    letter-spacing: var(--body-l-semibold-letter-spacing);
+    line-height: var(--body-l-semibold-line-height);
+    white-space: nowrap;
+    font-style: var(--body-l-semibold-font-style);
+  }
+
+  
+  
+  .register .bottom {
+    display: flex;
+    width: 804px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 956px;
+    left: 48px;
+  }
+  
+  .register .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--body-m-medium-font-family);
+    font-weight: var(--body-m-medium-font-weight);
+    color: var(--noble-black300);
+    font-size: var(--body-m-medium-font-size);
+    letter-spacing: var(--body-m-medium-letter-spacing);
+    line-height: var(--body-m-medium-line-height);
+    white-space: nowrap;
+    font-style: var(--body-m-medium-font-style);
+  }
+  
+  .register .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--body-m-medium-font-family);
+    font-weight: var(--body-m-medium-font-weight);
+    color: var(--noble-black300);
+    font-size: var(--body-m-medium-font-size);
+    text-align: right;
+    letter-spacing: var(--body-m-medium-letter-spacing);
+    line-height: var(--body-m-medium-line-height);
+    white-space: nowrap;
+    font-style: var(--body-m-medium-font-style);
+  }
+  
+  .register .overlap-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    width: 804px;
+    height: 44px;
+    top: 41px;
+    left: 48px;
+    justify-content: space-between; /* Align items vertically with space between */
+  }
+  
+  .register .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items horizontally with space between */
+    position: relative;
+    top: 7px;
+    left: 0;
+    width: 100%; /* Occupy full width */
+  }
+  
+  .register .logo {
+    position: relative;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .register .value-3 {
+    background: linear-gradient(180deg, rgb(130, 219, 247) 0%, rgb(182, 240, 156) 100%);
+    -webkit-background-clip: text !important;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    color: transparent;
+    position: relative;
+    font-family: var(--body-l-semibold-font-family);
+    font-weight: var(--body-l-semibold-font-weight);
+    font-size: var(--body-l-semibold-font-size);
+    letter-spacing: var(--body-l-semibold-letter-spacing);
+    line-height: var(--body-l-semibold-line-height);
+    white-space: nowrap;
+    font-style: var(--body-l-semibold-font-style);
+  }
+  
+  .register .text-wrapper-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Turret Road-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  .register .login-link {
+    font-family: var(--body-l-semibold-font-family);
+    font-weight: var(--body-l-semibold-font-weight);
+    font-size: var(--body-l-semibold-font-size);
+    letter-spacing: var(--body-l-semibold-letter-spacing);
+    line-height: var(--body-l-semibold-line-height);
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .register .gemini-generated {
+    position: absolute;
+    width: 506px;
+    height: 1024px;
+    top: 0;
+    left: 934px;
+    object-fit: cover;
+  }
+  
+
+    .social-buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+}
+
+.social-buttons .social-login-button {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 24px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: var(--noble-black600);
+  border-radius: 12px;
+}
+
+.social-buttons .frame {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.social-buttons .value {
+  position: relative;
+  width: fit-content;
+  font-family: var(--body-l-semibold-font-family);
+  font-weight: var(--body-l-semibold-font-weight);
+  color: var(--noble-black400);
+  font-size: var(--body-l-semibold-font-size);
+  letter-spacing: var(--body-l-semibold-letter-spacing);
+  line-height: var(--body-l-semibold-line-height);
+  white-space: nowrap;
+  font-style: var(--body-l-semibold-font-style);
+}
+
+.register .social-buttons .social-login-button {
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px 24px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    background-color: var(--noble-black600);
+    border-radius: 12px;
+    cursor: pointer; /* Add cursor style */
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.register .social-buttons .social-login-button:hover {
+    background-color: var(--noble-black500); /* Change background color on hover */
+}
+
+.register .bottom .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--body-m-medium-font-family);
+    font-weight: var(--body-m-medium-font-weight);
+    color: var(--noble-black300);
+    font-size: var(--body-m-medium-font-size);
+    text-align: right;
+    letter-spacing: var(--body-m-medium-letter-spacing);
+    line-height: var(--body-m-medium-line-height);
+    white-space: nowrap;
+    font-style: var(--body-m-medium-font-style);
+    cursor: pointer; /* Add cursor style */
+    transition: color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.register .bottom .text-wrapper-3:hover {
+    color: #ffffff; /* Change color on hover */
+}
+.social-buttons .img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+
+.login .divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.login .divider-2 {
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    height: 1px;
+    object-fit: cover;
+}
+
+.login .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--body-s-medium-font-family);
+    font-weight: var(--body-s-medium-font-weight);
+    color: var(--noble-black400);
+    font-size: var(--body-s-medium-font-size);
+    letter-spacing: var(--body-s-medium-letter-spacing);
+    line-height: var(--body-s-medium-line-height);
+    white-space: nowrap;
+    font-style: var(--body-s-medium-font-style);
+}
