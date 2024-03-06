@@ -18,4 +18,17 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  //Pricing table
+
   
+  const toggleButtons = document.getElementById("toggleButtons");
+  const pill = document.querySelector(".pill");
+  const monthlyText = document.querySelector(".billed-monthly");
+  const yearlyText = document.querySelector(".billed-yearly-save-15");
+
+  toggleButtons.addEventListener("click", function() {
+    pill.classList.toggle("active");
+    monthlyText.classList.toggle("active");
+    yearlyText.classList.toggle("active");
+  });
