@@ -1,7 +1,7 @@
 .contact-us-10,
 .contact-us-10 * {
   box-sizing: border-box;
-  border-radius: 10px;
+
 }
 .contact-us-10 {
   background: var(--black-black-70, #000000);
@@ -20,7 +20,7 @@
   left: 816px;
   top: 0px;
   object-fit: cover;
-  border-radius: 20px;
+  
 }
 .large-normal-justify-active {
   
@@ -492,6 +492,69 @@
 
 .send-messages-btn:hover {
     background-color: #0056b3;
+}
+
+ /* Additional CSS for navigation bar */
+ .navbar {
+    overflow: hidden;
+    background: linear-gradient(to right, #000000, #7636ff,#000000);
+    font-family: var(--headings-semibold-16px-font-family,"Raleway-SemiBold", sans-serif);
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: var(--white-white-20, #f8f9fa);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: var(--white-white-20, #f8f9fa);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: var(--black-black-60, #7636ff);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--black-black-70, #000000);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: var(--white-white-20, #f8f9fa);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--black-black-60,#7636ff);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
