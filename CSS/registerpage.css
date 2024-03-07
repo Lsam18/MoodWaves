@@ -1,7 +1,7 @@
 .register {
     position: relative;
-    width: 1440px;
-    height: 1024px;
+    width: 1536px;
+    height: 695px;
     background-color: var(--noble-black700);
     overflow: hidden;
   }
@@ -29,19 +29,21 @@
   }
   
   .register .text-wrapper {
+    top: -150px;
     position: relative;
     align-self: stretch;
     margin-top: -1px;
     font-family: var(--heading-XL-regular-font-family);
     font-weight: var(--heading-XL-regular-font-weight);
     color: var(--noble-black0);
-    font-size: var(--heading-XL-regular-font-size);
+    font-size: 25px;
     letter-spacing: var(--heading-XL-regular-letter-spacing);
     line-height: var(--heading-XL-regular-line-height);
     font-style: var(--heading-XL-regular-font-style);
   }
   
   .register .form {
+    top: -180px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -149,6 +151,7 @@
   
   .register .checkbox-button {
     display: flex;
+    top: -50px;
     align-items: center; /* Align items center to have checkbox and label on the same line */
     gap: 16px; /* Add some gap between checkbox and label */
     position: relative;
@@ -179,8 +182,11 @@
     flex-grow: 1;
   }
   
+
+
   .register .button {
-    all: unset;
+    top: -70px;
+    al: unset;
     box-sizing: border-box;
     display: flex;
     height: 48px;
@@ -227,6 +233,7 @@
   }
   
   .register .text-wrapper-2 {
+    top: -300px;
     position: relative;
     width: fit-content;
     margin-top: -1px;
@@ -241,6 +248,7 @@
   }
   
   .register .text-wrapper-3 {
+    top: -300px;
     position: relative;
     width: fit-content;
     margin-top: -1px;
@@ -302,12 +310,12 @@
   
   .register .text-wrapper-4 {
     position: absolute;
-    top: 0;
+    top: 10;
     left: 0;
     font-family: "Turret Road-ExtraBold", Helvetica;
     font-weight: 800;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 0;
     line-height: normal;
     white-space: nowrap;
@@ -325,10 +333,10 @@
   
   .register .gemini-generated {
     position: absolute;
-    width: 506px;
+    width: 550px;
     height: 1024px;
     top: 0;
-    left: 934px;
+    left: 1000px;
     object-fit: cover;
   }
   
