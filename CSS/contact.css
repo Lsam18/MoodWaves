@@ -499,6 +499,7 @@
     overflow: hidden;
     background: linear-gradient(to right, #000000, #7636ff,#000000);
     font-family: var(--headings-semibold-16px-font-family,"Raleway-SemiBold", sans-serif);
+    
 }
 
 .navbar a {
