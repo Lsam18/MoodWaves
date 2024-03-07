@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+}
+
+.logo {
+    display: block;
+    width: 300px;
+    margin: 20px 20px;
+}
+
+
+
+.discover-your-emotions-with-mood-waves-visualise-connect-express {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 65px;
+    font-weight: 300;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin: -20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left; /* Float to the left */
+    width: 66%; /* Take up 56% of the width */
+}
+
+.experience-a-unique-platform-where-emotions-become-art-mood-waves-empowers-you-to-express-your-deepest-feelings-through-captivating-visualizations-and-curated-music-fostering-genuine-connections-and-personal-growth {
+    color: #ffffff;
+    text-align: left;
+    font-family: "WorkSans-SemiBold", sans-serif;
+    font-size: 20.21px;
+    line-height: 27.29px;
+    font-weight: 600;
+    position: relative;
+    float: right; /* Float to the right */
+    width: 30%; /* Take up 30% of the width */
+    padding: 20px; /* Add some padding for spacing */
+    margin-top: -240px; /* Adjusted margin for moving up */
+    margin-left: 40%; /* Adjusted margin for moving more to the right */
+}
+
+.subtract {
+    width: 300px;
+    position: absolute; /* Position absolute */
+    top: calc(70% - 20px); /* 20px above the bottom of the previous element */
+    left: 13%; /* 13% from the left */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+.rectangle-131 {
+    background: linear-gradient(180deg, rgba(210, 255, 58, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 20px;
+    width: 180px; /* Reduced width */
+    height: 80px; /* Reduced height */
+    position: absolute; /* Position absolute */
+    top: calc(65% + 20px); /* 20px below the "subtract" image */
+    left: 32%; /* 33% from the left */
+    transform: translateX(-50%); /* Center horizontally */
+    text-align: center;
+}
+
+._300-projects {
+    color: #ffffff;
+    font-family: "WorkSans-Medium", sans-serif;
+    font-size: 30px; /* Reduced font size */
+    font-weight: 500;
+    position: absolute; /* Position absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center text vertically and horizontally */
+}
+
+.rectangle-130 {
+    background: #421bcd;
+    border-radius: 24px;
+    width: 270px;
+    height: 95px;
+    position: absolute;
+    top: calc(78% + 20px); /* 20px below the "rectangle-131" */
+    left: 30%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.we-have-the-best-ai-image-generator {
+    color: #ffffff;
+    font-family: "DarkerGrotesque-Bold", sans-serif;
+    font-size: 17px;
+    text-align: left;
+    font-weight: 300;
+    position: absolute;
+    top: 48%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+}
