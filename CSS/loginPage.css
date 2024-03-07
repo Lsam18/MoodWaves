@@ -7,14 +7,20 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.Wrapper{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+
 a {
     text-decoration: none;
 }
 
 .login {
     position: relative;
-    width: 1420px;
-    height: 1024px;
+    width: 1550px;
+    height: 695px;
     background-color: var(--noble-black700);
     overflow: hidden;
 }
@@ -45,6 +51,7 @@ a {
 .login .hello {
     position: relative;
     align-self: stretch;
+    top: -90px;
     width: 100%;
     flex: 0 0 auto;
     font-weight: 500;
@@ -55,6 +62,7 @@ a {
 .login .text-wrapper {
     position: relative;
     width: 556px;
+    top: -85px;
     margin-right: -60px;
     font-family: var(--body-XL-medium-font-family);
     font-weight: var(--body-XL-medium-font-weight);
@@ -67,6 +75,7 @@ a {
 
 .login .form {
     display: flex;
+    top: -110px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -79,6 +88,7 @@ a {
 
 .login .social-buttons {
     display: flex;
+    top: -10px;
     align-items: flex-start;
     gap: 24px;
     position: relative;
@@ -89,6 +99,7 @@ a {
 }
 
 .login .social-login-button {
+    
     display: flex;
     height: 48px;
     align-items: center;
@@ -107,6 +118,7 @@ a {
     position: relative;
     width: 20px;
     height: 20px;
+    
 }
 
 .login .value {
@@ -120,6 +132,7 @@ a {
     line-height: var(--body-l-semibold-line-height);
     white-space: nowrap;
     font-style: var(--body-l-semibold-font-style);
+    
 }
 
 .login .img {
@@ -129,6 +142,7 @@ a {
 }
 
 .login .divider {
+    top: -35px;
     display: flex;
     align-items: center;
     gap: 16px;
@@ -139,6 +153,7 @@ a {
 }
 
 .login .divider-2 {
+    
     position: relative;
     flex: 1;
     flex-grow: 1;
@@ -147,6 +162,7 @@ a {
 }
 
 .login .text-wrapper-2 {
+    
     position: relative;
     width: fit-content;
     margin-top: -1px;
@@ -160,7 +176,12 @@ a {
     font-style: var(--body-s-medium-font-style);
 }
 
+.input{
+    top: -30px;
+}
+
 .login .input {
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -173,6 +194,7 @@ a {
 }
 
 .login .field {
+    
     display: flex;
     align-items: center; /* Center vertically */
     height: 50px;
@@ -197,6 +219,7 @@ a {
 }
 
 .login .field-2 {
+    
     display: flex;
     height: 50px;
     align-items: center;
@@ -210,7 +233,9 @@ a {
 }
 
 .login .bottom {
+    top: -55px;
     display: flex;
+    
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -221,6 +246,7 @@ a {
 
 .login .checkbox-button {
     display: inline-flex;
+    
     align-items: flex-start;
     gap: 16px;
     position: relative;
@@ -253,6 +279,7 @@ a {
     line-height: var(--body-l-medium-line-height);
     white-space: nowrap;
     font-style: var(--body-l-medium-font-style);
+    
 }
 
 .login .value-4 {
@@ -274,6 +301,7 @@ a {
     font-style: var(--body-l-semibold-font-style);
 }
 
+
 .login .button {
     all: unset;
     box-sizing: border-box;
@@ -283,6 +311,7 @@ a {
     justify-content: center;
     gap: 12px;
     padding: 8px 24px;
+    top: -70px;
     position: relative;
     align-self: stretch;
     width: 100%;
@@ -307,17 +336,21 @@ a {
     line-height: var(--body-l-semibold-line-height);
     white-space: nowrap;
     font-style: var(--body-l-semibold-font-style);
+    
 }
 
 .login .sign-up {
+    
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
     position: relative;
     align-self: stretch;
+    top: -130px;
     width: 100%;
     flex: 0 0 auto;
+    padding-top: -500px;
 }
 
 .login .value-6 {
@@ -336,12 +369,12 @@ a {
 
 .login .text-wrapper-3 {
     position: absolute;
-    top: 42px;
+    top: 10px;
     left: 69px;
     font-family: "Turret Road-ExtraBold", Helvetica;
     font-weight: 800;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 0;
     line-height: normal;
     white-space: nowrap;
@@ -364,7 +397,7 @@ a {
     position: relative;
     width: 614px;
     height: 329px;
-    top: 617px;
+    top: 350px;
     left: 86px;
 }
 
