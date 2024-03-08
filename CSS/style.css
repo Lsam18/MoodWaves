@@ -5,11 +5,30 @@ body {
 .logo {
     display: block;
     width: 300px;
-    margin: 20px 25px;
-    
+    margin: 20px 55px;
 }
 
+.ellipse-32,
+.ellipse-32 * {
+  box-sizing: border-box;
+}
+.ellipse-32 {
+  background: #5a2ff3;
+  border-radius: 50%;
+  height: 400px; /* Smaller height */
+  width: 800px; /* Smaller width */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Behind other content */
+  opacity: 0.5; /* Adjust opacity for fading effect */
+  filter: blur(100px); /* Blur effect */
+  transition: opacity 1s ease; /* Smooth opacity transition */
+}
 
+.ellipse-32:hover {
+  opacity: 0; /* Fade out on hover */
+}
 
 .discover-your-emotions-with-mood-waves-visualise-connect-express {
     color: #ffffff;
@@ -23,7 +42,7 @@ body {
     -webkit-box-orient: vertical;
     margin: -20px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
     float: left; /* Float to the left */
     width: 56%; /* Take up 56% of the width */
 }
@@ -47,7 +66,7 @@ body {
     width: 500px;
     position: absolute; /* Position absolute */
     top: calc(70% - 20px); /* 20px above the bottom of the previous element */
-    left: 19%; /* 13% from the left */
+    left: 20%; /* 13% from the left */
     transform: translateX(-50%); /* Center horizontally */
 }
 
@@ -58,7 +77,7 @@ body {
     height: 120px; /* Reduced height */
     position: absolute; /* Position absolute */
     top: calc(65% + 20px); /* 20px below the "subtract" image */
-    left: 48%; /* 33% from the left */
+    left: 49%; /* 33% from the left */
     transform: translateX(-50%); /* Center horizontally */
     text-align: center;
 }
@@ -82,7 +101,7 @@ body {
     height: 130px;
     position: absolute;
     top: calc(87% + 20px); /* 20px below the "rectangle-131" */
-    left: 43%;
+    left: 44%;
     transform: translateX(-50%);
     text-align: center;
 }
@@ -160,15 +179,320 @@ body {
         rgba(104, 67, 236, 1) 0%,
         rgba(41, 41, 41, 0) 100%
     );
-    border-radius: 35px;
+    border-radius: 25px;
     height: 180px;
     position: relative;
     margin-top: 390px;
     width: 250px;
-    left: 60%;
+    left: 61%;
+}
+
+.rectangle-132,
+.rectangle-132 * {
+  box-sizing: border-box;
+}
+.rectangle-132 {
+  background: #d2ff3a;
+  border-radius: 24px;
+  height: 99px;
+  position: relative;
+}
+
+.try-free,
+.try-free * {
+  box-sizing: border-box;
+}
+.try-free {
+  color: #000000;
+  text-align: center;
+  font-family: "WorkSans-Medium", sans-serif;
+  font-size: 40px;
+  line-height: 101%;
+  text-decoration: none;
+  font-weight: 500;
+  width: 350px;
+  position: absolute;
+  top: calc(100% + 20px); /* 20px below the "rectangle-129" */
+  left: 55%;
+  transform: translateX(-50%);
+  background: #d2ff3a;
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px 40px; /* Larger padding */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.try-free:hover {
+  background: #a0e638; /* Hover background color */
+}
+
+.arrow {
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.crafted-by-nsbm-computing-undergraduates-powered-by-ai-to-elevate-your-exploration,
+.crafted-by-nsbm-computing-undergraduates-powered-by-ai-to-elevate-your-exploration
+  * {
+  box-sizing: border-box;
+}
+.crafted-by-nsbm-computing-undergraduates-powered-by-ai-to-elevate-your-exploration {
+  text-align: center;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  font-size: 22px;
+  line-height: 18px;
+  font-weight: 200;
+  text-transform: uppercase;
+  position: relative;
+  top: 260px;
+}
+.crafted-by-nsbm-computing-undergraduates-powered-by-ai-to-elevate-your-exploration-span {
+  color: #ffffff;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  font-size: 22px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.crafted-by-nsbm-computing-undergraduates-powered-by-ai-to-elevate-your-exploration-span2 {
+  color: #d2ff3a;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  font-size: 22px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.crafted-by-nsbm-computing-undergraduates-powered-by-ai-to-elevate-your-exploration-span3 {
+  color: #ffffff;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  font-size: 22px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.explore,
+.explore * {
+  box-sizing: border-box;
+}
+.explore {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TurretRoad-ExtraBold", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+  top: 370px;
+  text-align: center;
+}
+
+.frame,
+.frame * {
+  box-sizing: border-box;
+}
+.frame1 {
+    flex-shrink: 0;
+    width: 600px;
+    height: 357px;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    margin: 0 auto; /* Center the frame horizontally */
+    top: 450px;
+    right: 300px;
+    
+    
+  }
+  .frame2{
+    flex-shrink: 0;
+    width: 600px;
+    height: 357px;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    margin: 0 auto; /* Center the frame horizontally */
+    top: 94px;
+    left: 350px;
+  
+  }
+
+.frame-105,
+.frame-106 {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0; /* Center the frame content horizontally */
+  top: 41px;
+}
+.frame-104 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.create-stunning-visual-in-seconds {
+  color: #ffffff;
+  text-align: left;
+  font-family: "DarkerGrotesque-Regular", sans-serif;
+  font-size: 40px;
+  line-height: 37.8px;
+  right: 30px;
+  font-weight: 400;
+  position: relative;
+  width: 422.76px;
+}
+.generating-innovative-ideas-is-a-crucial-aspect-of-any-creative-endeavor-ai-tools-can-help-spark-inspiration-by-analyzing-vast-amounts-of-data {
+  color: #c4c4c4;
+  text-align: left;
+  font-family: "WorkSans-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 27.3px;
+  font-weight: 400;
+  position: relative;
+  width: 410px;
+  right: 30px;
+}
+.group-1171275444 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle2 {
+    background: #d2ff3a;
+    border-radius: 800px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    width: 19.54%;
+    height: 46px;
+    position: absolute;
+    left: 190px; /* Adjust the value to move it closer or farther from the right edge */
+    top: 256px;
+  }
+  
+
+
+
+.rectangle {
+  background: #19161c;
+  border-radius: 14px;
+  text-align: center;
+  width: 95%;
+  height: 357px;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  top: 0px;
+  box-shadow: 0px 58px 80px 0px rgba(0, 0, 0, 0.16);
 }
 
 
 
 
+.discover-your-sound-track-instantly {
+  color: #ffffff;
+  text-align: left;
+  font-family: "DarkerGrotesque-Regular", sans-serif;
+  font-size: 40px;
+  line-height: 37.8px;
+  font-weight: 400;
+  position: relative;
+  width: 400px;
+  right: 30px;
+}
+.finding-the-perfect-music-to-match-your-mood-is-an-art-in-itself-let-our-ai-driven-platform-curate-personalized-musics-based-on-your-preferences {
+  color: #c4c4c4;
+  text-align: left;
+  font-family: "WorkSans-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 27.3px;
+  font-weight: 400;
+  position: relative;
+  width: 410px;
+  right: 30px;
+}
 
+
+.generate,
+.discover {
+    color: #000000;
+    text-align: center;
+    font-family: "WorkSans-Medium", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    position: relative;
+    top: 75%;
+    right: 50px;
+    cursor: pointer; /* Add cursor pointer */
+    padding: 10px 20px; /* Add padding */
+    background-color: transparent; /* Remove background color */
+    border-radius: 10px; /* Button border radius */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1; /* Ensure buttons are above pseudo-elements */
+}
+
+
+
+.generate::before,
+.discover::before,
+.generate::after,
+.discover::after {
+    content: "";
+    position: absolute;
+    background: #d2ff3a;
+    z-index: -1;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    
+}
+
+.generate::before,
+.discover::before {
+    top: -10px;
+    left: -50%;
+    width: 150%;
+    height: 150%;
+    border-radius: 10px; /* Adjust border-radius */
+}
+
+.generate::after,
+.discover::after {
+    bottom: -20px;
+    right: -50%;
+    width: 150%;
+    height: 150%;
+    border-radius: 10px; /* Adjust border-radius */
+}
+
+.generate:hover::before,
+.discover:hover::before {
+    left: 2px;
+    
+}
+
+.generate:hover::after,
+.discover:hover::after {
+    right: 2px;
+}
+
+.image,
+.image * {
+  box-sizing: border-box;
+}
+.image {
+  height: 1512px;
+  position: relative;
+  object-fit: cover;
+  z-index: -99;
+}
