@@ -1,7 +1,6 @@
 /* Additional CSS for navigation bar */
- .navbar {
+.navbar {
     overflow: hidden;
-    
     font-family: var(--headings-semibold-16px-font-family,"Raleway-SemiBold", sans-serif);
     margin-top: 10px;
     margin-left: -8px;
@@ -12,7 +11,7 @@
 .navbar a {
     float: right;
     display: block;
-    color: var(--white-white-20, #f8f9fa);
+    color: var(--white-white-20, #7636ff);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -30,7 +29,7 @@
     font-size: 17px;
     border: none;
     outline: none;
-    color: var(--white-white-20, #f8f9fa);
+    color: var(--white-white-20, #7636ff);
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -40,6 +39,7 @@
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: var(--black-black-60, #7636ff);
     border-radius: 5px;
+    color: #f8f9fa;
 }
 
 .dropdown-content {
@@ -49,7 +49,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    
+    border-radius: 10px;
 }
 
 .dropdown-content a {
