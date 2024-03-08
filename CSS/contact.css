@@ -505,7 +505,7 @@
 .navbar a {
     float: right;
     display: block;
-    color: var(--white-white-20, #f8f9fa);
+    color: var(--white-white-20, #ffffff);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
