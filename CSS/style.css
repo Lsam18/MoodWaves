@@ -5,7 +5,8 @@ body {
 .logo {
     display: block;
     width: 300px;
-    margin: 20px 20px;
+    margin: 20px 25px;
+    
 }
 
 
@@ -15,7 +16,7 @@ body {
     text-align: left;
     font-family: "Darker Grotesque", sans-serif;
     font-size: 65px;
-    font-weight: 300;
+    font-weight: 400;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -24,7 +25,7 @@ body {
     margin-top: 20px;
     margin-left: 20px;
     float: left; /* Float to the left */
-    width: 66%; /* Take up 56% of the width */
+    width: 56%; /* Take up 56% of the width */
 }
 
 .experience-a-unique-platform-where-emotions-become-art-mood-waves-empowers-you-to-express-your-deepest-feelings-through-captivating-visualizations-and-curated-music-fostering-genuine-connections-and-personal-growth {
@@ -43,21 +44,21 @@ body {
 }
 
 .subtract {
-    width: 300px;
+    width: 500px;
     position: absolute; /* Position absolute */
     top: calc(70% - 20px); /* 20px above the bottom of the previous element */
-    left: 13%; /* 13% from the left */
+    left: 19%; /* 13% from the left */
     transform: translateX(-50%); /* Center horizontally */
 }
 
 .rectangle-131 {
     background: linear-gradient(180deg, rgba(210, 255, 58, 1) 0%, rgba(255, 255, 255, 0) 100%);
     border-radius: 20px;
-    width: 180px; /* Reduced width */
-    height: 80px; /* Reduced height */
+    width: 300px; /* Reduced width */
+    height: 120px; /* Reduced height */
     position: absolute; /* Position absolute */
     top: calc(65% + 20px); /* 20px below the "subtract" image */
-    left: 32%; /* 33% from the left */
+    left: 48%; /* 33% from the left */
     transform: translateX(-50%); /* Center horizontally */
     text-align: center;
 }
@@ -65,7 +66,8 @@ body {
 ._300-projects {
     color: #ffffff;
     font-family: "WorkSans-Medium", sans-serif;
-    font-size: 30px; /* Reduced font size */
+    text-align: left;
+    font-size: 35px; /* Reduced font size */
     font-weight: 500;
     position: absolute; /* Position absolute */
     top: 50%;
@@ -76,11 +78,11 @@ body {
 .rectangle-130 {
     background: #421bcd;
     border-radius: 24px;
-    width: 270px;
-    height: 95px;
+    width: 380px;
+    height: 130px;
     position: absolute;
-    top: calc(78% + 20px); /* 20px below the "rectangle-131" */
-    left: 30%;
+    top: calc(87% + 20px); /* 20px below the "rectangle-131" */
+    left: 43%;
     transform: translateX(-50%);
     text-align: center;
 }
@@ -88,7 +90,7 @@ body {
 .we-have-the-best-ai-image-generator {
     color: #ffffff;
     font-family: "DarkerGrotesque-Bold", sans-serif;
-    font-size: 17px;
+    font-size: 25px;
     text-align: left;
     font-weight: 300;
     position: absolute;
@@ -96,3 +98,77 @@ body {
     left: 42%;
     transform: translate(-50%, -50%);
 }
+
+.rectangle-129,
+.rectangle-129 * {
+  box-sizing: border-box;
+}
+.group,
+.group * {
+    box-sizing: border-box;
+}
+
+.group {
+    display: inline-block; /* Display images horizontally */
+    position: relative;
+    overflow: visible;
+}
+
+.group img.Group1 {
+    width: 180px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    margin-right: 10px; /* Space between images */
+    position: absolute;
+    top: -20px; /* Adjust positioning */
+    left: -30px; /* Adjust positioning */
+    transform: rotate(5deg); /* Rotate 45 degrees */
+}
+
+.group img.Group2 {
+    width: 150px; /* Adjust width as needed */
+    height: 140px; /* Adjust height as needed */
+    margin-right: 10px; /* Space between images */
+    position: absolute;
+    top: -10px; /* Adjust positioning */
+    left: 140px; /* Adjust positioning */
+    transform: rotate(-20deg); /* Rotate -30 degrees */
+}
+
+.group img.Group3 {
+    width: 100px; /* Adjust width as needed */
+    height: 69px; /* Adjust height as needed */
+    margin-right: 10px; /* Space between images */
+    position: absolute;
+    top: 90px; /* Adjust positioning */
+    left: 50px; /* Adjust positioning */
+    transform: rotate(0deg); /* Rotate 60 degrees */
+}
+
+.group img.Group4 {
+    width: 30px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+    margin-right: 10px; /* Space between images */
+    position: absolute;
+    top: 110px; /* Adjust positioning */
+    left: 170px; /* Adjust positioning */
+    transform: rotate(-15deg); /* Rotate -15 degrees */
+}
+
+.rectangle-129 {
+    background: linear-gradient(
+        90deg,
+        rgba(104, 67, 236, 1) 0%,
+        rgba(41, 41, 41, 0) 100%
+    );
+    border-radius: 35px;
+    height: 180px;
+    position: relative;
+    margin-top: 390px;
+    width: 250px;
+    left: 60%;
+}
+
+
+
+
+
