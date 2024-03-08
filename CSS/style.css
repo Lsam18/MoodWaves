@@ -1,5 +1,7 @@
 body {
     background-color: black;
+    overflow-x: hidden;
+    
 }
 
 .logo {
@@ -205,7 +207,7 @@ body {
 .try-free {
   color: #000000;
   text-align: center;
-  font-family: "WorkSans-Medium", sans-serif;
+  font-family:".SF Soft Numeric", sans-serif; /* Change font family */
   font-size: 40px;
   line-height: 101%;
   text-decoration: none;
@@ -290,6 +292,7 @@ body {
 .frame,
 .frame * {
   box-sizing: border-box;
+  ;
 }
 .frame1 {
     flex-shrink: 0;
@@ -496,3 +499,301 @@ body {
   object-fit: cover;
   z-index: -99;
 }
+
+
+/* join a community part */
+.framenew,
+.framenew * {
+  box-sizing: border-box;
+}
+.framenew {
+    flex-shrink: 0;
+    height: 595px;
+    position: relative;
+    z-index: 1; /* Set a higher z-index */
+    top: -1200px;
+  }
+  
+.frame9 {
+  width: 44.47%;
+  height: 573px;
+  position: absolute;
+  right: -2.06%;
+  left: 57.59%;
+  top: 0.41px;
+}
+.frame10 {
+  width: 92.98%;
+  height: 159px;
+  position: absolute;
+  right: 3.51%;
+  left: 3.51%;
+  top: 0px;
+}
+.frame11 {
+  width: 84.34%;
+  height: 132px;
+  position: absolute;
+  right: 15.66%;
+  left: 0%;
+  top: 0.41px;
+}
+
+._20 {
+  background: linear-gradient(
+    261.81deg,
+    rgba(210, 255, 58, 1) 0%,
+    rgba(104, 67, 236, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  font-size: 126px;
+  line-height: 132px;
+  font-weight: 600;
+  position: absolute;
+  right: 48.69%;
+  left: 0%;
+  width: 51.31%;
+  top: -3px;
+}
+.active-accounts {
+  color: #c4c4c4;
+  text-align: left;
+  font-family: "WorkSans-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 27.3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: absolute;
+  right: 68.61%;
+  left: 0%;
+  width: 31.39%;
+  top: 131.41px;
+}
+.frame5 {
+  width: 92.98%;
+  height: 159px;
+  position: absolute;
+  right: 3.47%;
+  left: 3.55%;
+  top: 194px;
+}
+._300 {
+  background: linear-gradient(
+    261.81deg,
+    rgba(210, 255, 58, 1) 0%,
+    rgba(104, 67, 236, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  font-size: 126px;
+  line-height: 132px;
+  font-weight: 600;
+  position: absolute;
+  right: 39.13%;
+  left: 0%;
+  width: 60.87%;
+  top: -3px;
+}
+.projects {
+  color: #c4c4c4;
+  text-align: left;
+  font-family: "WorkSans-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 27.3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: absolute;
+  right: 82.61%;
+  left: 0%;
+  width: 17.39%;
+  top: 131.41px;
+}
+.frame6 {
+  width: 92.98%;
+  height: 159px;
+  position: absolute;
+  right: 3.51%;
+  left: 3.51%;
+  top: 388px;
+}
+._1000 {
+  background: linear-gradient(
+    261.81deg,
+    rgba(210, 255, 58, 1) 0%,
+    rgba(104, 67, 236, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  font-size: 126px;
+  line-height: 132px;
+  font-weight: 600;
+  position: absolute;
+  right: 27.06%;
+  left: 0%;
+  width: 72.94%;
+  top: -3px;
+}
+.topics {
+  color: #c4c4c4;
+  text-align: left;
+  font-family: "WorkSans-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 27.3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: absolute;
+  right: 87.91%;
+  left: 0%;
+  width: 12.09%;
+  top: 131.41px;
+}
+.frame-109 {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 388px;
+  position: absolute;
+  left: 27.5px;
+  top: 41px;
+}
+.join-a-community {
+  color: #ffffff;
+  text-align: left;
+  font-family: "DarkerGrotesque-Regular", sans-serif;
+  font-size: 50px;
+  line-height: 40px;
+  font-weight: 400;
+  position: relative;
+  width: 300px;
+  left: 50px;
+}
+.of-individuals {
+  color: #ffffff;
+  text-align: left;
+  font-family: "DarkerGrotesque-Regular", sans-serif;
+  font-size: 50px;
+  line-height: 46.2px;
+  font-weight: 400;
+  position: relative;
+  width: 337px;
+  left: 50px;
+}
+
+
+/*slideshow part*/
+.journey-through-art-of-community,
+.journey-through-art-of-community * {
+  box-sizing: border-box;
+}
+.journey-through-art-of-community {
+  color: #ffffff;
+  text-align: left;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  height: 105.81px;
+  top: -1000px;
+  right: -50px;
+}
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer,
+.footer * {
+  box-sizing: border-box;
+}
+.footer {
+  background: #0f0f0f;
+  border-radius: 12px 12px 0px 0px;
+  border-style: solid;
+  border-color: #141414;
+  border-width: 1px;
+  height: 141px;
+  position: relative;
+}
+
+.mood-waves {
+    color: #ffffff;
+    font-size: 36px;
+    width: 250px;
+    margin: 25px auto; /* Added margin top and bottom */
+    display: block;
+  }
+  
+  .copyright-2024-by-mood-waves-all-rights-reserved,
+.copyright-2024-by-mood-waves-all-rights-reserved * {
+  box-sizing: border-box;
+}
+.copyright-2024-by-mood-waves-all-rights-reserved {
+  color: #ffffff;
+  text-align: center;
+  font-family: "WorkSans-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 27.3px;
+  font-weight: 400;
+  position: relative;
+}
+
+/* Centering and adjusting position of the social links */
+.social-links {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .icon-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "WorkSans-Regular", sans-serif;
+    font-size: 14px;
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  .icon-link i {
+    margin-right: 5px;
+  }
+  
+  /* Example styling for icons */
+  .fab.fa-github {
+    color: #ffffff; /* Color for GitHub icon */
+  }
+  
+  .far.fa-envelope {
+    color: #ffffff; /* Color for Email icon */
+  }
+  
+  /* Hover effect */
+  .icon-link:hover {
+    color: #d2ff3a; /* Change color on hover */
+  }
+  
