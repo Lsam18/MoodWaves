@@ -1,3 +1,29 @@
+.ellipse-32,
+.ellipse-32 * {
+  box-sizing: border-box;
+}
+.ellipse-32 {
+  background: #5a2ff3;
+  border-radius: 50%;
+  height: 400px; /* Smaller height */
+  width: 800px; /* Smaller width */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Behind other content */
+  opacity: 0.5; /* Adjust opacity for fading effect */
+  filter: blur(100px); /* Blur effect */
+  transition: opacity 1s ease; /* Smooth opacity transition */
+}
+
+.ellipse-32:hover {
+  opacity: 0; /* Fade out on hover */
+}
+
+
+
+
+
 .register {
     position: relative;
     width: 1536px;
@@ -458,4 +484,20 @@
     line-height: var(--body-s-medium-line-height);
     white-space: nowrap;
     font-style: var(--body-s-medium-font-style);
+}
+
+
+@media all and (max-width:1271px) {
+  .register {
+    position: relative;
+    width: 1536px;
+    height: 800px;
+    background-color: var(--noble-black700);
+    overflow: hidden;
+  }
+  
+
+
+
+  
 }
