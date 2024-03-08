@@ -11,8 +11,9 @@
   gap: 64px;
   align-items: center;
   justify-content: flex-start;
-  height: 1015px;
+  height: 700px;
   position: relative;
+  padding-top: 10px;
 }
 .upgrade-your-plan {
   color: #1a1a1a;
@@ -22,7 +23,7 @@
   line-height: 120%;
   font-weight: 700;
   position: relative;
-  width: 592px;
+  width: 100%;
 }
 .price-info {
   display: flex;
@@ -35,13 +36,14 @@
   position: relative;
 }
 .toggle {
+    top: -35px;
     display: flex;
     flex-direction: row;
     gap: 15px;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    width: 592px;
+    width: 100%;
     position: relative;
     cursor: pointer; /* Add this line to make it clickable */
   }
@@ -49,6 +51,8 @@
   .toggle:hover .pill {
     background: #7f56d9; /* Change background on hover */
   }
+
+
   
   .pill:hover .ellipse-1 {
     background: #ffffff; /* Change background on hover */
@@ -107,7 +111,10 @@
   .active .billed-yearly-save-15 {
     color: #1a1a1a;
   }
+
 .card-list {
+  height: auto;
+  top: -50px;
   display: flex;
   flex-direction: row;
   gap: 32px;
@@ -127,7 +134,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex: 1;
-  height: 581px;
+  height: 100%;
   position: relative;
   box-shadow: var(
     --shadow-md-box-shadow,
@@ -278,6 +285,7 @@
   
 }
 .price-card2 {
+  height: auto;
   background: var(--base-white, #ffffff);
   border-radius: 8px;
   padding: 24px;
@@ -327,6 +335,8 @@
   font-weight: 400;
   position: relative;
 }
+
+
 .frame-6 {
   display: flex;
   flex-direction: column;
@@ -335,7 +345,10 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+  max-width: 336px; /* Add max-width to limit the width of the content */
+  width: 100%; /* Ensure the content takes 100% width within its container */
 }
+
 .everything-in-the-free-plan-plus {
   color: #667085;
   text-align: left;
@@ -344,8 +357,10 @@
   line-height: 140%;
   font-weight: 400;
   position: relative;
-  width: 336px;
+  /* width: 336px; Remove the fixed width to allow responsive shrinking */
 }
+
+
 .feature-list2 {
   display: flex;
   flex-direction: column;
@@ -353,7 +368,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 336px;
+  width: 100%;
   position: relative;
 }
 .check-icon5 {
