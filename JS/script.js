@@ -32,3 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
     monthlyText.classList.toggle("active");
     yearlyText.classList.toggle("active");
   });
+
+
+ 
