@@ -1,6 +1,11 @@
+body{
+  overflow-x: hidden;
+}
+
 .ellipse-32,
 .ellipse-32 * {
   box-sizing: border-box;
+  
 }
 .ellipse-32 {
   background: #5a2ff3;

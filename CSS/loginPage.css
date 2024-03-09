@@ -457,7 +457,7 @@ a {
     width: 608px;
     height: 200px;
     top: 0;
-    left: 0;
+    left: -65px;
     font-family: var(--heading-l-semibold-font-family);
     font-weight: var(--heading-l-semibold-font-weight);
     color: var(--noble-black0);
