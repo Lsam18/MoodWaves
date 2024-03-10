@@ -83,9 +83,9 @@ body{
   
   #nav-bar {
     position: absolute;
-    left: 1vw;
-    top: 1vw;
-    height: calc(100% - 2vw);
+    left: 0vw;
+    top: 0vw;
+    height: calc(100% - 5vw);
     background: var(--navbar-dark-primary);
     border-radius: 16px;
     display: flex;
@@ -94,6 +94,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow: hidden;
     user-select: none;
+   
   }
   
   #nav-bar hr {
@@ -172,6 +173,7 @@ body{
     border-radius: 99px;
     transform: translate(2px, 8px) rotate(30deg);
     transition: 0.2s;
+   
    
   }
   
@@ -419,7 +421,7 @@ body{
       padding-right:100px;
       padding-top:45px;
       padding-bottom:1px;
-      background-image:url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://i.pinimg.com/736x/ac/b2/fc/acb2fc1a6f8e4c8c9258d871ffdab136.jpg);
+      background-image:url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://i.pinimg.com/736x/cb/3d/04/cb3d0460161b3b6e77a115b11258feb7.jpg);
       background-repeat:repeat-y, repeat;
       -webkit-border-radius:12px;
       border-radius:12px;
@@ -476,5 +478,65 @@ body{
       margin-bottom:100px;
   }
 
-  /*feed*/
+  /* feed section */
+body {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  .grid-container {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 100px auto;
+  }
+  
+  .grid-container div {
+    width: 150px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px rgb(255, 255, 255);
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(84, 0, 157, 0.5);
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
+    
+  }
+  
+  .grid-container div:hover img {
+    filter:drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+  }
+  
+  .grid-container div:hover {
+    border-color: rgb(129, 1, 198);
+  }
+  
+  .grid-container div img {
+    width: 100%;
+    filter: grayscale(80%);
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
+  }
+  
+  .grid-container div p {
+    margin: 5px 0;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  
+  
+  
   
