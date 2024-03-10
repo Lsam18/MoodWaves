@@ -34,3 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
+//create area
+$(document).ready(function(){
+  $('#title').focus();
+    $('#text').autosize();
+});

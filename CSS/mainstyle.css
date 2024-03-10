@@ -26,4 +26,24 @@
       transform: rotate(360deg);
     }
   }
-  
+  .ellipse-32,
+.ellipse-32 * {
+  box-sizing: border-box;
+}
+.ellipse-32 {
+  background: #5a2ff3;
+  border-radius: 50%;
+  height: 200px; /* Smaller height */
+  width: 500px; /* Smaller width */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Behind other content */
+  opacity: 0.5; /* Adjust opacity for fading effect */
+  filter: blur(100px); /* Blur effect */
+  transition: opacity 1s ease; /* Smooth opacity transition */
+}
+
+.ellipse-32:hover {
+  opacity: 0; /* Fade out on hover */
+}
