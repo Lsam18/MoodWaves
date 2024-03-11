@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - Moood Waves</title>
+    <link rel="stylesheet" href="CSS/navbar.css" />
+    <link rel="stylesheet" href="CSS/explore.css" />
+    <link rel="stylesheet" href="CSS/mainstyle.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="CSS/footer.css"/>
+</head>
+<body>
+    <div class="ellipse-32"></div>
+
+    <div class="navbar">
+        <a href="loginPage.html">Sign up/Login</a>
+        <a href="#">Explore</a>
+        <a href="createpage.html">Create</a>
+        <div class="dropdown">
+            <button class="dropbtn">More <i class="fas fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Help/FAQ</a>
+            </div>
+        </div>
+        <a href="#">Home</a>
+        <img src="Images/logo.png" alt="Mood Waves" class="logo" style="width: 300px; display: block; margin-top: 14px; margin-left: 50px;"/>
+    </div>
+
+    <div class="explore">EXPLORE</div>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+
+    <div class="filter-container">
+        <div class="filter">
+            <label for="trending">Trending:</label>
+            <select id="trending">
+                <option value="trending">Trending</option>
+                <option value="featured">Featured</option>
+                <option value="random">Random</option>
+                <option value="new">New</option>
+            </select>
+        </div>
+        <div class="filter">
+            <label for="categories">Categories:</label>
+            <select id="categories">
+                <option value="lonely">Lonely</option>
+                <option value="happy">Happy</option>
+                <option value="excited">Excited</option>
+                
+                <!-- Add more categories as needed -->
+            </select>
+        </div>
+    </div>
+
+    <!-- Explore Section -->
+    <div class="explore-section">
+        <!-- Card 1 -->
+        <div class="card">
+            <a href="#" class="expand-image">
+                <div class="profile-info">
+                    <img src="Images/carousel 1.jpeg" alt="Profile Picture">
+                    <span class="username">username</span>
+                </div>
+                <img src="Images/carousel2.jpeg" alt="Sample Image" class="main-image">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <i class="far fa-heart"></i> 120
+                        <i class="far fa-comment"></i> 25
+                        <i class="fas fa-share"></i> Share
+                    </div>
+                    <div class="view-text">View</div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <a href="#" class="expand-image">
+                <div class="profile-info">
+                    <img src="Images/carousel2.jpeg" alt="Profile Picture">
+                    <span class="username">username</span>
+                </div>
+                <img src="Images/carousel 1.jpeg" alt="Sample Image" class="main-image">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <i class="far fa-heart"></i> 98
+                        <i class="far fa-comment"></i> 10
+                        <i class="fas fa-share"></i> Share
+                    </div>
+                    <div class="view-text">View</div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Add more cards as needed -->
+    </div>
+
+    <div class="expanded-image-container">
+        <div class="close-button">&times;</div>
+        <img src="" alt="Expanded Image" class="expanded-image">
+    </div>
+
+    <div class="footer">
+        <img src="Images/logo.png" alt="Mood Waves" class="mood-waves" />
+        <div class="copyright-2024-by-mood-waves-all-rights-reserved">
+            Copyright © 2024 by Mood Waves | All Rights Reserved
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/yourgithubusername" target="_blank" class="icon-link">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="mailto:youremail@example.com" class="icon-link">
+                <i class="far fa-envelope"></i> Email
+            </a>
+        </div>
+    </div>
+
+    <script src="JS/explore.js"></script>
+</body>
+</html>
