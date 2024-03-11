@@ -112,3 +112,48 @@ elImages.forEach(figure => {
 });
 
 
+
+//feed
+document.addEventListener("DOMContentLoaded", function() {
+  const thumbnails = document.querySelectorAll('.thumbnail');
+
+  thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', () => {
+      const imageUrl = thumbnail.getAttribute('src');
+      const caption = thumbnail.parentElement.querySelector('.caption').textContent;
+
+      const overlay = document.createElement('div');
+      overlay.classList.add('popup-overlay');
+
+      const popupContent = document.createElement('div');
+      popupContent.classList.add('popup-content');
+
+      const fullImage = document.createElement('img');
+      fullImage.classList.add('popup-image');
+      fullImage.setAttribute('src', imageUrl);
+      fullImage.setAttribute('alt', 'Full Image');
+
+      const popupCaption = document.createElement('p');
+      popupCaption.classList.add('popup-caption');
+      popupCaption.textContent = caption;
+
+      const closeButton = document.createElement('button');
+      closeButton.classList.add('close-btn');
+      closeButton.innerHTML = '&times;'; // Using '×' for a close icon
+
+      closeButton.addEventListener('click', () => {
+        document.body.removeChild(overlay);
+      });
+
+      popupContent.appendChild(fullImage);
+      popupContent.appendChild(popupCaption);
+      popupContent.appendChild(closeButton);
+      overlay.appendChild(popupContent);
+      document.body.appendChild(overlay);
+
+      overlay.addEventListener('click', () => {
+        document.body.removeChild(overlay);
+      });
+    });
+  });
+});
