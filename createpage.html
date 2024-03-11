@@ -20,14 +20,14 @@
 
     <div class="navbar">
         <a href="loginPage.html">Sign up/Login</a>
-        <a href="#">Explore</a>
-        <a href="#">Create</a>
+        <a href="explore.html">Explore</a>
+        <a href="createpage.html">Create</a>
         <div class="dropdown">
             <button class="dropbtn">More <i class="fas fa-caret-down"></i></button>
             <div class="dropdown-content">
                 <a href="#">Profile</a>
                 <a href="#">About Us</a>
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
                 <a href="#">Help/FAQ</a>
@@ -79,6 +79,18 @@
 <!-- createFeed -->
 
 <h1>Trending Abstracts</h1>
+
+<!-- Filtering Menu -->
+<div class="filter-menu">
+    <label for="filter">Filter by:</label>
+    <select id="filter">
+      <option value="random">Random</option>
+      <option value="top_day">Top Day</option>
+      <option value="top_month">Top Month</option>
+      <option value="top_week">Top Week</option>
+      <option value="likes">Likes</option>
+    </select>
+  </div>
 <div class="grid-container">
   <div class="grid-item">
     <div class="image-container">

@@ -420,3 +420,29 @@ body {
     font-size: 20px;
     cursor: pointer;
   }
+
+  /*filtering menu*/
+/* Styling for the Filtering Menu */
+.filter-menu {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .filter-menu label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .filter-menu select {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background: linear-gradient(
+        180deg,
+        rgba(104, 67, 236, 1) 0%,
+        rgba(52, 56, 130, 1) 100%
+      );
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+  }

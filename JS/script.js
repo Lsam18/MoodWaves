@@ -157,3 +157,32 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+//filtering options
+  $(document).ready(function() {
+    $('#filter').change(function() {
+      var selectedOption = $(this).val();
+
+      // Perform filtering based on selectedOption
+      switch (selectedOption) {
+        case 'random':
+          // Code to show random items
+          break;
+        case 'top_day':
+          // Code to show top day items
+          break;
+        case 'top_month':
+          // Code to show top month items
+          break;
+        case 'top_week':
+          // Code to show top week items
+          break;
+        case 'likes':
+          // Code to show items sorted by likes
+          break;
+        default:
+          // Default action if no valid option selected
+      }
+    });
+  });
+
