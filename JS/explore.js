@@ -56,3 +56,29 @@ document.addEventListener('keydown', (e) => {
         hideExpandedImage();
     }
 });
+
+//comment section
+// Select all comment icons
+const commentIcons = document.querySelectorAll('.comment-icon');
+
+// Select the comment section
+const commentSection = document.querySelector('.comment-section');
+
+// Add click event listener to each comment icon
+commentIcons.forEach(icon => {
+    icon.addEventListener('click', () => {
+        // Toggle the 'show' class on the comment section
+        commentSection.classList.toggle('show');
+    });
+});
+
+//clse
+// JavaScript to handle closing the comment section
+document.addEventListener("DOMContentLoaded", function() {
+    const closeCommentSection = document.querySelector(".close-comment-section");
+    const commentSection = document.querySelector(".comment-section");
+
+    closeCommentSection.addEventListener("click", function() {
+        commentSection.classList.remove("show");
+    });
+});

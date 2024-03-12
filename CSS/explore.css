@@ -194,3 +194,96 @@ body {
 }
 
 
+/*comment section*/
+/* Comment Section Styles */
+.comment-section {
+    display: none;
+    background-color: #000000;
+    padding: 20px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.comment-section.show {
+    display: block;
+}
+
+.comments {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-content {
+    color: white;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.comment-input {
+    margin-top: 20px;
+}
+
+.comment-input input[type="text"] {
+    width: calc(100% - 70px);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: rgb(34, 34, 34);
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+.comment-input button {
+    padding: 10px 50px;
+    margin-top: 20px;
+    background: #7437ee;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-input button:hover {
+    background-color: #400468;
+}
+
+
+/* Your existing CSS styles */
+/* Close Icon for Comment Section */
+.close-comment-section {
+    position: absolute;
+    top: 120%;
+    right: 5%;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.close-icon {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-icon:hover {
+    color: #5c04ae;
+}
+
