@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(14, 8, 43);
+    background-color: rgb(0, 0, 0);
     overflow-x: hidden;
     
 }
@@ -497,7 +497,7 @@ body {
   height: 1512px;
   position: relative;
   object-fit: cover;
-  z-index: -99;
+  z-index: -999;
 }
 
 

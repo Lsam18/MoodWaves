@@ -15,85 +15,89 @@
 
         /* Expanded Image Info */
         .expanded-image-info {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            right: 20px;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            z-index: 9999;
-        }
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust the right spacing as needed */
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Display vertically */
+    gap: 10px;
+    z-index: 9999;
+    max-width: 300px; /* Set max width as needed */
+}
 
-        .profile-info-expanded {
-            display: flex;
-            align-items: center;
-        }
+.profile-info-expanded {
+    display: flex;
+    align-items: center;
+}
 
-        .profile-info-expanded img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
+.profile-info-expanded img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
 
-        .profile-details {
-            display: flex;
-            flex-direction: column;
-        }
+.profile-details {
+    display: flex;
+    flex-direction: column;
+}
 
-        .username-expanded {
-            color: #ffffff;
-            font-weight: bold;
-            font-size: 18px;
-        }
+.username-expanded {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
 
-        .follow-btn {
-            background-color: #7437ee;
-            color: #ffffff;
-            border: none;
-            border-radius: 20px;
-            padding: 8px 16px;
-            margin-top: 5px;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-        }
+.follow-btn {
+    background-color: #7437ee;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
 
-        .follow-btn i {
-            margin-right: 5px;
-        }
+.follow-btn i {
+    margin-right: 5px;
+}
 
-        .image-actions {
-            display: flex;
-            gap: 10px;
-        }
+.image-actions {
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    gap: 10px;
+    margin-top: auto; /* Pushes the buttons to the bottom */
+}
 
-        .download-btn,
-        .share-btn {
-            background-color: #7437ee;
-            color: #ffffff;
-            border: none;
-            border-radius: 20px;
-            padding: 8px 16px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-        }
+.download-btn,
+.share-btn {
+    background-color: #7437ee;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
 
-        .download-btn i,
-        .share-btn i {
-            margin-right: 5px;
-        }
+.download-btn i,
+.share-btn i {
+    margin-right: 5px;
+}
 
-        .caption {
-            color: #ffffff;
-            font-size: 16px;
-            line-height: 1.5;
-        }
+.caption {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 
         /* Hover Effects for Buttons */
         .follow-btn:hover,
