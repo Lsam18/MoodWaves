@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Waves - Create</title>
+    <link rel="stylesheet" href="CSS/navbar.css" />
+    <link rel="stylesheet" href="CSS/create.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="CSS/mainstyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha384-x4idMy5j4H51g4Cw1gXJn2h7aSziPE4KNBl2ZEDcOa4Rf0wXwFSLu1d7jlQ2Bu" crossorigin="anonymous">
+    <style>
+        #wrapper {
+            margin: 20px auto;
+            text-align: center;
+        }
+        #text {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        #button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 50%;
+            font-size: 16px;
+        }
+        #button:hover {
+            background-color: #45a049;
+        }
+        #generatedImage {
+            display: none;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 4px solid #3498db;
+            width: 30px;
+            height: 30px;
+            -webkit-animation: spin 2s linear infinite; /* Safari */
+            animation: spin 2s linear infinite;
+            margin: 20px auto;
+        }
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .gallery-title {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 24px;
+        }
+        #imageGridContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .grid-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 10px;
+        }
+        .thumbnail {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ellipse-32"></div>
+
+    <div class="navbar">
+        <a href="loginPage.html">Sign up/Login</a>
+        <a href="explore.html">Explore</a>
+        <a href="createpage.html">Create</a>
+        <div class="dropdown">
+            <button class="dropbtn">More <i class="fas fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Help/FAQ</a>
+            </div>
+        </div>
+        <a href="#">Home</a>
+        <img src="Images/logo.png" alt="Mood Waves" style="display: block; width: 300px; margin: 20px 620px; margin-top: 130px; " />
+    </div>
+    <div class="welcome-to-mood-waves">WELCOME TO MOOD WAVES!</div>
+
+    <div class="side-menu">
+        <div class="user-profile">
+            <img src="Images/carousel2.jpeg" alt="Profile Picture">
+            <h3>Username</h3>
+        </div>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-heart"></i> Liked Images</a></li>
+            <li><a href="#"><i class="fas fa-cogs"></i> Customization</a></li>
+            <li><a href="#"><i class="fas fa-image"></i> My Images</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+        <button class="new-chat-btn">
+            <i class="fas fa-plus"></i> New Chat
+        </button>
+    </div>
+
+    <div id="wrapper">
+        <form id="paper">
+            <textarea id="text" placeholder="How do you feel?" rows="4"></textarea>
+            <br>
+            <input id="generateButton" type="submit" value="Generate">
+        </form>
+        <img id="loading" src="https://i.imgur.com/LVHmLnb.gif" alt="Loading" style="display: none;">
+        <div id="generatedImageContainer">
+            <a id="generatedImageLink" href="#" target="_blank">
+                <img id="generatedImage" src="" alt="Generated Image" style="max-width: 300px;">
+            </a>
+        </div>
+    </div>
+
+    <!-- createFeed -->
+    <h1 class="gallery-title">Generated Fantasy Portrait</h1>
+
+    <div class="grid-container" id="imageGridContainer">
+        <!-- Image will be dynamically added here -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('paper');
+            const textInput = document.getElementById('text');
+            const loading = document.getElementById('loading');
+            const generatedImageContainer = document.getElementById('generatedImageContainer');
+            const generatedImage = document.getElementById('generatedImage');
+            const generatedImageLink = document.getElementById('generatedImageLink');
+    
+            form.addEventListener('submit', async function(event) {
+                event.preventDefault();
+    
+                const text = textInput.value.trim();
+    
+                if (text === '') {
+                    alert('Please enter some text.');
+                    return;
+                }
+    
+                try {
+                    // Show loading spinner
+                    loading.style.display = 'block';
+                    generatedImageContainer.style.display = 'none'; // Hide previous image
+    
+                    const resp = await fetch('http://localhost:3000/generate-image', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'api-key': '1348bec0-2e45-42d4-bd5d-2d4667cd95e1' // Add your API key if needed
+                        },
+                        body: JSON.stringify({
+                            text: text
+                        })
+                    });
+    
+                    if (!resp.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+    
+                    const data = await resp.json();
+                    console.log('Response data:', data);
+    
+                    // Check if image URL is present in response
+                    if (data.imageUrl) {
+                        // Set the image link URL
+                        generatedImageLink.href = data.imageUrl;
+                        // Set the image source (for preview)
+                        generatedImage.src = data.imageUrl;
+                        generatedImageContainer.style.display = 'block'; // Show the image container
+                    } else {
+                        throw new Error('Image URL not found in response');
+                    }
+                } catch (error) {
+                    console.error('Error generating image:', error);
+                    alert('Error generating image. Please try again.');
+                } finally {
+                    // Hide loading spinner
+                    loading.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
+    <script src="JS/generateImage.js" defer></script>
+</body>
+</html>

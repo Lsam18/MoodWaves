@@ -1,0 +1,463 @@
+.price-table-section,
+.price-table-section * {
+  box-sizing: border-box;
+}
+.price-table-section {
+  background: #fcfcfd;
+  border-radius: 20px;
+  padding: 96px 32px 96px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 700px;
+  position: relative;
+  padding-top: 10px;
+}
+.upgrade-your-plan {
+  color: #1a1a1a;
+  text-align: center;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 60.75px;
+  line-height: 120%;
+  font-weight: 700;
+  position: relative;
+  width: 100%;
+}
+.price-info {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.toggle {
+    top: -35px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+    cursor: pointer; /* Add this line to make it clickable */
+  }
+
+  .toggle:hover .pill {
+    background: #7f56d9; /* Change background on hover */
+  }
+
+
+  
+  .pill:hover .ellipse-1 {
+    background: #ffffff; /* Change background on hover */
+  }
+.billed-monthly {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 700;
+  position: relative;
+  width: 220px;
+}
+.pill {
+  background: #5e19e9;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 80px;
+  height: 44px;
+  position: relative;
+  overflow: hidden;
+}
+.ellipse-1 {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: 40px;
+  top: 4px;
+}
+.billed-yearly-save-15 {
+  color: #7f56d9;
+  text-align: left;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 700;
+  position: relative;
+  width: 220px;
+}
+
+.active .pill {
+    background: #7f56d9;
+  }
+  
+  .active .ellipse-1 {
+    background: #ffffff;
+  }
+  
+  .active .billed-monthly {
+    color: #7f56d9;
+  }
+  
+  .active .billed-yearly-save-15 {
+    color: #1a1a1a;
+  }
+
+.card-list {
+  height: auto;
+  top: -50px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.price-card {
+  background: var(--base-white, #ffffff);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  height: 100%;
+  position: relative;
+  box-shadow: var(
+    --shadow-md-box-shadow,
+    0px 2px 4px -2px rgba(16, 24, 40, 0.06),
+    0px 4px 8px -2px rgba(16, 24, 40, 0.1)
+  );
+  overflow: hidden;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.free {
+  color: #1a1a1a;
+  text-align: left;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 27px;
+  line-height: 120%;
+  font-weight: 700;
+  position: relative;
+}
+._0 {
+  color: #1a1a1a;
+  text-align: left;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 27px;
+  line-height: 120%;
+  font-weight: 700;
+  position: relative;
+}
+.description-of-the-tier-list-will-go-here-copy-should-be-concise-and-impactful {
+  color: #667085;
+  text-align: left;
+  font-family: "Helvetica-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.rectangle-1 {
+  background: #d9d9d9;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 1px;
+  position: relative;
+}
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.check-item-text {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.check-icon {
+  border-radius: 14px;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.text {
+  color: #1a1a1a;
+  text-align: left;
+  font-family: "Helvetica-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.check-icon2 {
+  border-radius: 14px;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+.check-icon3 {
+  border-radius: 14px;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+.check-icon4 {
+  border-radius: 14px;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+.frame-5 {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #5e15f2;
+  border-width: 2px;
+  padding: 16px 8px 16px 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.try-for-free {
+  color: #7f56d9;
+  text-align: left;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 700;
+  position: relative;
+  
+}
+.price-card2 {
+  height: auto;
+  background: var(--base-white, #ffffff);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+  box-shadow: 0px 5px 30px 2px rgba(105, 65, 198, 0.2),
+    0px 2px 8px 0px rgba(158, 119, 237, 0.2);
+  overflow: hidden;
+}
+.pro {
+  color: #1a1a1a;
+  text-align: left;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 27.000003814697266px;
+  line-height: 120%;
+  font-weight: 700;
+  position: relative;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+._12 {
+  color: #1a1a1a;
+  text-align: left;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 27.000003814697266px;
+  line-height: 120%;
+  font-weight: 700;
+  position: relative;
+}
+.month {
+  color: #1a1a1a;
+  text-align: left;
+  font-family: "Helvetica-Regular", sans-serif;
+  font-size: 12.000000953674316px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+}
+
+
+.frame-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  max-width: 336px; /* Add max-width to limit the width of the content */
+  width: 100%; /* Ensure the content takes 100% width within its container */
+}
+
+.everything-in-the-free-plan-plus {
+  color: #667085;
+  text-align: left;
+  font-family: "Helvetica-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  /* width: 336px; Remove the fixed width to allow responsive shrinking */
+}
+
+
+.feature-list2 {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+.check-icon5 {
+  border-radius: 14px;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+.check-icon6 {
+  border-radius: 14px;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+.check-icon7 {
+  border-radius: 14px;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+.check-icon8 {
+  border-radius: 14px;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+.check-icon9 {
+  border-radius: 14px;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+.frame-52 {
+  background: #6120e3;
+  border-radius: 4px;
+  padding: 16px 8px 16px 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.subscribe-now {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 700;
+  position: relative;
+}
+
+.try-for-free{
+  color: #6120e3;
+  text-align: left;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none; /* Remove default link underline */
+  transition: background-color 0.3s ease; 
+}
+.subscribe-now {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none; /* Remove default link underline */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+
+
+
