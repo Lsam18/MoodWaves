@@ -1,24 +1,17 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const generateImage = require('./generateImage'); // Import your image generation function
+const path = require('path');
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
-app.use(express.static('public')); // Serve static files
-app.use(bodyParser.json());
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.post('/generate-image', async (req, res) => {
-    try {
-        const generatedImage = await generateImage(req.body.text); // Call your image generation function
-        console.log('Generated Image:', generatedImage);
-        res.send({ imageUrl: generatedImage });
-    } catch (error) {
-        console.error('Error generating image:', error);
-        res.status(500).send('Error generating image');
-    }
+// Serve your HTML file
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
