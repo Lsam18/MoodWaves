@@ -237,7 +237,7 @@
             <li><a href="#"><i class="fas fa-heart"></i> Liked Images</a></li>
 
             <li><a href="#"><i class="fas fa-image"></i> My Images</a></li>
-            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="settingspage.html"><i class="fas fa-cog"></i> Settings</a></li>
             <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
        
@@ -373,16 +373,32 @@
     </script>
     <!-- <download share buttons> -->
     <script>
-        function downloadImage() {
+      async function downloadImage() {
     const imageUrl = document.getElementById('expandedImageModalContent').src;
-    const link = document.createElement('a');
-    link.href = imageUrl;
-    // You might want to replace the name 'downloadedImage' with a more suitable one, perhaps based on the image content or a timestamp
-    link.download = 'downloadedImage.jpg'; 
-    document.body.appendChild(link); // Temporarily add link to body for the download to work
-    link.click(); // Trigger the download
-    document.body.removeChild(link); // Clean up
+
+    try {
+        const response = await fetch(imageUrl);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const blob = await response.blob();
+        const downloadUrl = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = downloadUrl;
+
+        // This assumes you're fine with the default filename, or you could set a specific name
+        link.download = 'downloadedImage.jpg';
+        document.body.appendChild(link); // Append to the document
+        link.click(); // Simulate click to trigger download
+
+        document.body.removeChild(link); // Clean up
+        window.URL.revokeObjectURL(downloadUrl); // Clean up the object URL
+    } catch (error) {
+        console.error('Download error:', error);
+        alert('An error occurred while downloading the image');
+    }
 }
+
 
     </script>
 
