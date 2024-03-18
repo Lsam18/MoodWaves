@@ -276,8 +276,8 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
                     <a href="Help.html">Help/FAQ</a>
                 </div>
             </div>
-        <a href="index.html">Home</a>
-</div>
+        </div>
+        <a href="index.php">Home</a>
         <img src="Images/logo.png" alt="Mood Waves" style="display: block; width: 300px; margin: 20px 620px; margin-top: 130px;">
     </div>
     <div class="welcome-to-mood-waves" style="margin-right: -220px;">WELCOME TO MOOD WAVES!</div>
