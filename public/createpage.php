@@ -103,7 +103,7 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
             background-color: #39058d;
             color: white;
             padding: 14px 20px;
-            margin: 15px 38px;
+            margin: 5px 38px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
@@ -118,9 +118,12 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
         }
 
         .generatedImageItem {
-            margin: 10px;
+            margin: 30px;
             cursor: pointer;
             transition: transform 0.3s ease;
+            margin-right: -90px;
+            width: 700px;
+            margin-top: 20px;
         }
 
         .generatedImageItem img {
@@ -173,69 +176,134 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
 
         /* Spinner Animation */
         .loader {
-            border: 4px solid rgba(0, 0, 0, 0.1);
-            border-top: 4px solid #333;
+            border: 4px solid rgba(165, 0, 236, 0.1);
+            border-top: 4px solid #9800ca;
             border-radius: 50%;
             width: 30px;
             height: 30px;
             animation: spin 1s linear infinite;
-            margin: 0 auto;
+            margin: 0 360px;
             margin-top: 20px;
+            right: -150px;
         }
 
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+       /* Image Actions */
+.image-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start vertically */
+    position: absolute;
+    top: 25px; /* Adjust as needed for top positioning */
+    right: 125px;
+    z-index: 100; /* Ensure it's above other modal content */
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Button Styles */
+/* Button Styles for Larger Screens */
+.download-btn, .share-btn, .save-btn {
+    background-color: #6706a3; /* Dark purple background */
+    color: white; /* White text */
+    padding: 10px 20px; /* More padding for a larger button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Space between buttons */
+    font-size: 14px; /* Adjust font size as needed */
+    transition: background-color 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+/* Adjusting Button Position for Mobile Screens */
+@media screen and (max-width: 768px) {
+    .image-actions {
+        right: 10px; /* Move buttons closer to the right edge on smaller screens */
+        top: 10px; /* Adjust top position for better visibility */
+    }
+
+    /* Adjust Button Sizes for Smaller Screens */
+    .download-btn, .share-btn, .save-btn {
+        padding: 8px 15px; /* Slightly reduce padding */
+        font-size: 12px; /* Reduce font size for space efficiency */
+        margin-top: 8px; /* Reduce margin between buttons */
+    }
+}
+
+/* Further Adjustments for Very Small Screens */
+@media screen and (max-width: 480px) {
+    .image-actions {
+        right: 5px; /* Further adjust for very small screens */
+        top: 5px;
+    }
+
+    .download-btn, .share-btn, .save-btn {
+        padding: 6px 10px; /* Even smaller padding */
+        font-size: 10px; /* Even smaller font size */
+        margin-top: 5px; /* Less space between buttons */
+    }
+}
+
+
     </style>
 </head>
 <body>
     <div class="ellipse-32"></div>
 
     <div class="navbar">
-        <a href="loginPage.php">Sign up/Login</a>
-        <a href="explore.php">Explore</a>
-        <a href="createpage.php">Create</a>
+        <a href="registeruser.html">Sign up/Login</a>
+        <a href="explore.html">Explore</a>
+        <a href="createpage.html">Create</a>
         <div class="dropdown">
-            <button class="dropbtn">More <i class="fas fa-caret-down"></i></button>
-            <div class="dropdown-content">
-                <a href="#">Profile</a>
-                <a href="#">About Us</a>
-                <a href="contact.html">Contact</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Help/FAQ</a>
+                <button class="dropbtn">More 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    
+                    <a href="aboutus.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="privacyPolicy.html">Privacy Policy</a>
+                    <a href="Terms&Services.html">Terms of Service</a>
+                    <a href="Help.html">Help/FAQ</a>
+                </div>
             </div>
         </div>
         <a href="index.php">Home</a>
         <img src="Images/logo.png" alt="Mood Waves" style="display: block; width: 300px; margin: 20px 620px; margin-top: 130px;">
     </div>
-    <div class="welcome-to-mood-waves" style="margin-right: -200px;">WELCOME TO MOOD WAVES!</div>
+    <div class="welcome-to-mood-waves" style="margin-right: -220px;">WELCOME TO MOOD WAVES!</div>
 
     <!-- Side menu -->
     <div class="side-menu">
         <div class="user-profile">
             <img src="Images/carousel2.jpeg" alt="Profile Picture">
-            <h3><?php echo isset ($_SESSION['username']) ? $_SESSION['username'] : 'Guest'; ?></h3>
+            <h3>Username</h3>
         </div>
         <ul>
             <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
             <li><a href="#"><i class="fas fa-heart"></i> Liked Images</a></li>
-            <li><a href="#"><i class="fas fa-cogs"></i> Customization</a></li>
+
             <li><a href="#"><i class="fas fa-image"></i> My Images</a></li>
-            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
-            <li><a href=""><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            <li><a href="settingspage.html"><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
-        <button class="new-chat-btn">
-            <i class="fas fa-plus"></i> New Chat
-        </button>
+       
     </div>
 
     <!-- Main content -->
     <div class="main-content">
         <div id="wrapper">
             <form id="paper">
-                <textarea id="text" placeholder="How do you feel?" rows="3"></textarea>
+                <textarea id="text" placeholder="Feeling like a gently floating cloud, soft and light, amidst a serene sky of pale blue." rows="3"></textarea>
                 <br>
                 <input id="generateButton" type="submit" value="Generate">
             </form>
@@ -249,14 +317,45 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
         <div id="expandedImageModal">
             <span class="closeModal" onclick="closeModal()">&times;</span>
             <img id="expandedImageModalContent" src="" alt="Expanded Image">
+            <div class="image-actions">
+                <div class="button-container">
+                    <button class="download-btn" onclick="downloadImage()"><i class='bx bxs-download'></i> Download</button>
+                    <button class="share-btn" onclick="shareImage()"><i class='bx bxs-share-alt'></i> Share</button>
+                    <button class="save-btn"><i class='bx bxs-save'></i> Save</button>
+                </div>
+            </div>
         </div>
-    </div>
 
     <script>
+          // Function to open modal
+          function openModal(imageUrl) {
+            const modal = document.getElementById('expandedImageModal');
+            const modalContent = document.getElementById('expandedImageModalContent');
+
+            modalContent.src = imageUrl;
+            modal.style.display = 'block';
+        }
+
+        // Function to close modal
         function closeModal() {
             document.getElementById('expandedImageModal').style.display = 'none';
         }
 
+        // Function for download button
+        function downloadImage() {
+            const imageUrl = document.getElementById('expandedImageModalContent').src;
+            // Code to download image
+            console.log('Downloading image:', imageUrl);
+        }
+
+        // Function for share button
+        function shareImage() {
+            const imageUrl = document.getElementById('expandedImageModalContent').src;
+            // Code to share image
+            console.log('Sharing image:', imageUrl);
+        }
+
+        // Your existing script
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('paper');
             const textInput = document.getElementById('text');
@@ -296,26 +395,25 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
                     const data = await resp.json();
                     console.log('Response data:', data);
 
-                    // Check if image URLs are present in response
+                    // Check if image URL is present in response
                     if (data.output_url) {
-                        const images = Array.isArray(data.output_url) ? data.output_url : [data.output_url];
+                        const imageUrl = data.output_url;
 
-                        images.forEach((imageUrl, index) => {
-                            const imageItem = document.createElement('div');
-                            imageItem.classList.add('generatedImageItem');
+                        const imageItem = document.createElement('div');
+                        imageItem.classList.add('generatedImageItem');
 
-                            const image = document.createElement('img');
-                            image.src = imageUrl;
-                            image.alt = 'Generated Image';
-                            image.onclick = function() {
-                                openModal(imageUrl);
-                            };
+                        const image = document.createElement('img');
+                        image.src = imageUrl;
+                        image.alt = 'Generated Image';
+                        image.onclick = function() {
+                            openModal(imageUrl);
+                        };
 
-                            imageItem.appendChild(image);
-                            generatedImageContainer.appendChild(imageItem);
-                        });
+                        imageItem.appendChild(image);
+                        generatedImageContainer.appendChild(imageItem);
+
                     } else {
-                        throw new Error('Image URLs not found in response');
+                        throw new Error('Image URL not found in response');
                     }
                 } catch (error) {
                     console.error('Error generating image:', error);
@@ -325,15 +423,59 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
                     loading.style.display = 'none';
                 }
             });
-
-            function openModal(imageUrl) {
-                const modal = document.getElementById('expandedImageModal');
-                const modalContent = document.getElementById('expandedImageModalContent');
-
-                modalContent.src = imageUrl;
-                modal.style.display = 'block';
-            }
         });
+
+        
+    </script>
+    <!-- <download share buttons> -->
+    <script>
+      async function downloadImage() {
+    const imageUrl = document.getElementById('expandedImageModalContent').src;
+
+    try {
+        const response = await fetch(imageUrl);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const blob = await response.blob();
+        const downloadUrl = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = downloadUrl;
+
+        // This assumes you're fine with the default filename, or you could set a specific name
+        link.download = 'downloadedImage.jpg';
+        document.body.appendChild(link); // Append to the document
+        link.click(); // Simulate click to trigger download
+
+        document.body.removeChild(link); // Clean up
+        window.URL.revokeObjectURL(downloadUrl); // Clean up the object URL
+    } catch (error) {
+        console.error('Download error:', error);
+        alert('An error occurred while downloading the image');
+    }
+}
+
+
+    </script>
+
+    <script>
+        function shareImage() {
+    const imageUrl = document.getElementById('expandedImageModalContent').src;
+    if (navigator.share) {
+        navigator.share({
+            title: 'Mood Waves Image', // Title of the share
+            text: 'Check out this image from Mood Waves!', // Text to accompany the image link
+            url: imageUrl // URL to share
+        }).then(() => console.log('Successful share'))
+        .catch((error) => console.log('Error sharing', error));
+    } else {
+        // Fallback for browsers that do not support the Web Share API
+        console.log('Web Share API not supported in this browser.');
+        alert('Sharing not supported in this browser. Please manually copy the image URL.');
+    }
+}
+
     </script>
 </body>
 </html>
+
