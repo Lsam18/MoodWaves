@@ -265,7 +265,7 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
     <div class="side-menu">
         <div class="user-profile">
             <img src="Images/carousel2.jpeg" alt="Profile Picture">
-            <h3>Username</h3>
+            <h3> <?php echo isset ($_SESSION['username']) ? $_SESSION['username'] : 'Guest'; ?> </h3>
         </div>
         <ul>
             <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
@@ -275,7 +275,6 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
             <li><a href="settingspage.php"><i class="fas fa-cog"></i> Settings</a></li>
             <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
-       
     </div>
 
     <!-- Main content -->
