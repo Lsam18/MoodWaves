@@ -194,7 +194,7 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
 
     <div class="navbar">
         <a href="loginPage.php">Sign up/Login</a>
-        <a href="explore.html">Explore</a>
+        <a href="explore.php">Explore</a>
         <a href="createpage.php">Create</a>
         <div class="dropdown">
             <button class="dropbtn">More <i class="fas fa-caret-down"></i></button>
@@ -207,7 +207,7 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
                 <a href="#">Help/FAQ</a>
             </div>
         </div>
-        <a href="#">Home</a>
+        <a href="index.php">Home</a>
         <img src="Images/logo.png" alt="Mood Waves" style="display: block; width: 300px; margin: 20px 620px; margin-top: 130px;">
     </div>
     <div class="welcome-to-mood-waves" style="margin-right: -200px;">WELCOME TO MOOD WAVES!</div>

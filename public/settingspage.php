@@ -14,7 +14,7 @@
 </head>
 <body>
     
-    <a href="createpage.html" class="back-arrow">
+    <a href="createpage.php" class="back-arrow">
         <i class="fas fa-arrow-left"></i>
     </a>
     <form class="edit-profile-form">
