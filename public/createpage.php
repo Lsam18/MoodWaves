@@ -239,9 +239,9 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
     <div class="ellipse-32"></div>
 
     <div class="navbar">
-        <a href="registeruser.html">Sign up/Login</a>
-        <a href="explore.html">Explore</a>
-        <a href="createpage.html">Create</a>
+        <a href="registeruser.php">Sign up/Login</a>
+        <a href="explore.php">Explore</a>
+        <a href="createpage.php">Create</a>
         <div class="dropdown">
                 <button class="dropbtn">More 
                     <i class="fa fa-caret-down"></i>
@@ -249,9 +249,9 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
                 <div class="dropdown-content">
                     
                     <a href="aboutus.html">About Us</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="privacyPolicy.html">Privacy Policy</a>
-                    <a href="Terms&Services.html">Terms of Service</a>
+                    <a href="contact.php">Contact</a>
+                    <a href="privacyPolicy.php">Privacy Policy</a>
+                    <a href="Terms&Services.php">Terms of Service</a>
                     <a href="Help.html">Help/FAQ</a>
                 </div>
             </div>
@@ -272,7 +272,7 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
             <li><a href="#"><i class="fas fa-heart"></i> Liked Images</a></li>
 
             <li><a href="#"><i class="fas fa-image"></i> My Images</a></li>
-            <li><a href="settingspage.html"><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="settingspage.php"><i class="fas fa-cog"></i> Settings</a></li>
             <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
        
