@@ -26,7 +26,7 @@
                 <div class="dropdown-content">
                     
                     <a href="aboutus.html">About Us</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.php">Contact</a>
                     <a href="privacyPolicy.php">Privacy Policy</a>
                     <a href="Terms&Services.php">Terms of Service</a>
                     <a href="Help.html">Help/FAQ</a>
