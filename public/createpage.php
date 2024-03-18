@@ -224,7 +224,7 @@ if (isset ($_POST["login"])) { // Note the change to a "login" button name
             <li><a href="#"><i class="fas fa-cogs"></i> Customization</a></li>
             <li><a href="#"><i class="fas fa-image"></i> My Images</a></li>
             <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
-            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            <li><a href=""><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
         <button class="new-chat-btn">
             <i class="fas fa-plus"></i> New Chat
