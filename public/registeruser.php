@@ -1,6 +1,24 @@
+<?php
+if (isset($_POST["submit"])) {
+    require 'includes/config.php';
+    $username = $_POST["username"];
+    $email = $_POST["email"];
+    $pw = $_POST["pw"];
+    $pw2 = $_POST["pw2"];
+
+    if ($pw == $pw2) {
+        $query = "INSERT INTO users VALUES('$username', '$email', '$pw')";
+        mysqli_query($conn, $query);
+        echo "<script> alert ('Registration successful!'); window.location.href = 'createpage.php'; </script>";
+        exit(); // Added exit to prevent further execution
+    } else {
+        echo "<script> alert ('Passwords do not match!');</script>";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="globals.css"/>
@@ -18,7 +36,7 @@
         <div class="div">
           <p class="text-wrapper">Unlock a World of Emotion: Register to Dive into Mood Waves</p>
         </div>
-        <form action="createpage.php" method="POST">
+        <form action="" method="POST">
           <div class="form">
             <div class="social-buttons">
                 <div class="social-login-button">

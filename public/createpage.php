@@ -1,25 +1,4 @@
-<?php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
 
-require 'includes/config.php';
-if (isset ($_POST["submit"])) {
-  $username = $_POST["username"];
-  $email = $_POST["email"];
-  $pw = $_POST["pw"];
-  $pw2 = $_POST["pw2"]; // Add missing variable declaration for $pw2
-
-
-  if ($pw == $pw2) {
-    $username = $_POST["username"]; 
-    $query = "INSERT INTO users VALUES('$username', '$email', '$pw')";
-    mysqli_query($conn, $query);
-    echo "<script> alert ('Registration successful!'); </script>"; // Fix typo in success message
-} else {
-    echo "<script> alert ('Passwords do not match!');</script>"; // Fix typo in error message
-}
-}
-?>
 
 <?php
 ini_set('display_errors', 1);
