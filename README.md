@@ -1,4 +1,4 @@
-Creating a well-structured README file is essential for outlining the setup, usage, and features of a project. Here is an example of a README for the MERN Login and Register with JWT Authentication system:
+
 
 ---
 
