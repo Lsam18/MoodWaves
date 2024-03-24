@@ -38,7 +38,7 @@
 
         // FIXME: Update this to your desired email address.
 
-        $recipient = "unicktheme@gmail.com";
+        $recipient = "lakshan.sam28@gmail.com";
 
 
 
@@ -50,7 +50,7 @@
 
         //Email Header
 
-        $head = " /// Unick Theme \\\ ";
+        $head = " /// Mood Waves \\\ ";
 
 
 
