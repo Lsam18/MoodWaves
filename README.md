@@ -2,101 +2,110 @@
 
 ---
 
-# Mood Waves Authentication System
+# Mood Waves - Social Media Platform
 
-The Mood Waves platform brings a new dimension to human-computer interaction by enabling users to generate and share visual representations based on textual input using Generative AI. This repository focuses on the authentication system, a secure and integral part of the Mood Waves experience.
+Mood Waves is a cutting-edge social media platform that harnesses the power of Generative AI to transform users' textual inputs into captivating visual representations. This repository encompasses the entire application, including a secure authentication system, image generation capabilities using OpenAI's API, and a community-focused interface for sharing and interaction.
 
 ## Table of Contents
 
+- [About The Project](#about-the-project)
 - [Features](#features)
-- [Technologies Used](#technologies-used)
+- [Built With](#built-with)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Authors](#authors)
+- [License](#license)
+- [Contact](#contact)
 - [Acknowledgments](#acknowledgments)
+
+## About The Project
+
+The Mood Waves platform is designed to be more than a social media app; it is a social canvas where art meets technology, allowing for emotional expression and connection. By combining the capabilities of Generative AI with an engaging social media experience, users can create and share images that reflect their emotions, thoughts, and creativity.
 
 ## Features
 
-- User Registration: Securely create a new account with email verification.
-- User Login: Log in with credentials to access the Mood Waves platform.
-- JWT Authentication: Manage sessions and user data securely.
-- Responsive UI: A polished frontend for a consistent experience across devices.
+- **AI-Powered Image Generation**: Create images from textual descriptions using OpenAI's powerful image generation API.
+- **User Registration and Login**: Secure sign-up and authentication system.
+- **Interactive Community**: Like, comment on, and share generated images within the Mood Waves community.
+- **Responsive Design**: Enjoy a consistent and engaging experience across various devices and screen sizes.
 
-## Technologies Used
+## Built With
 
-- **Frontend**: React.js, React Router DOM
-- **Backend**: Node.js with Express.js
-- **Database**: MongoDB
-- **Authentication**: JWT for session management, bcrypt for password hashing
+- [React.js](https://reactjs.org/) - The web framework used
+- [Node.js](https://nodejs.org/) - Server Environment
+- [Express.js](https://expressjs.com/) - Node.js Framework
+- [MongoDB](https://www.mongodb.com/) - Database
+- [JWT](https://jwt.io/) - Authentication
+- [OpenAI API](https://openai.com/api/) - AI Image Generation
 
 ## Getting Started
 
 ### Prerequisites
 
-Before running the project, make sure you have the following installed:
 - Node.js (LTS version)
-- npm (Node Package Manager)
-- MongoDB account and a cluster set up
+- npm (comes with Node.js)
+- MongoDB account with a database
+- OpenAI API key
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/MoodWaves.git
+   ```
+2. Install NPM packages for server
+   ```sh
+   cd MoodWaves/server
+   npm install
+   ```
+3. Enter your environment variables in `.env`
+   ```env
+   MONGO_URI=your_mongodb_uri
+   JWT_SECRET=your_jwt_secret
+   OPENAI_API_KEY=your_openai_api_key
+   ```
+4. Start the server
+   ```sh
+   npm start
+   ```
+5. Install NPM packages for client
+   ```sh
+   cd MoodWaves/client
+   npm install
+   ```
+6. Start the client
+   ```sh
+   npm start
+   ```
 
-    ```sh
-    git clone https://github.com/Lsam18/MoodWaves.git
-    ```
-
-2. Navigate to the backend directory and install dependencies:
-
-    ```sh
-    cd MoodWaves/server
-    npm install
-    ```
-
-3. Navigate to the frontend directory and install dependencies:
-
-    ```sh
-    cd MoodWaves/client
-    npm install
-    ```
-
-4. Set up your MongoDB URI and JWT secret key in a `.env` file in the `server` directory:
-
-    ```env
-    MONGO_URI=your_mongodb_uri
-    JWT_SECRET=your_jwt_secret_key
-    ```
-
-5. Start the backend server:
-
-    ```sh
-    npm start
-    ```
-
-6. Open a new terminal, navigate to the frontend directory, and start the React development server:
-
-    ```sh
-    npm start
-    ```
-
-Your application should now be running on `http://localhost:3000`.
+The client will run on [http://localhost:3000](http://localhost:3000) and the server on [http://localhost:5000](http://localhost:5000).
 
 ## Usage
 
-Use the application to register for a new account and explore the features. Log in to visualize and share your creative expressions with the community.
+After starting the application, users can register an account, create AI-generated images based on their mood or text input, and engage with the community by sharing, liking, or commenting on images.
 
 ## Contributing
 
-If you wish to contribute to this project, please fork the repository and submit a pull request. Any improvements or suggestions are welcome.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. If you'd like to contribute, please fork the repository and create a pull request.
 
+## License
 
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Your Name - [@your_twitter](https://twitter.com/your_twitter)
+
+Project Link: [https://github.com/your_username_/MoodWaves](https://github.com/your_username_/MoodWaves)
 
 ## Acknowledgments
 
-A special thanks to the entire Mood Waves team for their contributions and to OpenAI for providing the image generation API that enhances the platform's capabilities.
+- [OpenAI](https://openai.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Axios](https://github.com/axios/axios)
+- [bcrypt.js](https://www.npmjs.com/package/bcryptjs)
 
 ---
 
