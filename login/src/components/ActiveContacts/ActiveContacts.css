@@ -1,0 +1,16 @@
+.active-connections
+{
+    cursor: pointer;
+    padding: 1rem 0;
+}
+
+.active-connections:hover
+{
+    background-color: var(--bluish-white);
+}
+
+.active-connections-header-container 
+{
+    gap: 2rem;
+}
+

@@ -1,0 +1,167 @@
+body
+{
+    height: 100vh;
+}
+
+.user-auth-page
+{
+    width: 100%;
+    min-height: calc(100vh - 107.23px);
+    background-image: url("../../assets/illustrations/auth-background.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.user-auth-content-container
+{
+    min-height: 110%;
+    width: fit-content;
+    padding: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--royal-blue);
+    border-radius: 6px;
+}
+
+.user-auth-form
+{
+    padding: 3rem 4rem;
+    max-width: fit-content;
+    text-align: left;
+    border: none;
+}
+
+.user-auth-form input
+{
+    outline: none;
+}
+
+#user-auth-input-password
+{
+    flex-grow: 1;
+}
+
+.user-options-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.password-field-container
+{
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--pure-white);
+}
+
+.remember-me-container
+{
+    display: flex;
+    align-items: center;
+}
+
+#forgot-password
+{
+    color: var(--royal-blue);
+}
+
+.new-user-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+#new-user-link
+{
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.links-with-blue-underline, .links-with-blue-underline:visited, .links-with-blue-underline:hover, .links-with-blue-underline:active {
+    color: var(--royal-blue);
+}
+
+.links-with-blue-underline::after
+{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: var(--royal-blue);
+    transition: width .3s;
+}
+
+.links-with-blue-underline:hover::after
+{
+    width: 100%;
+}
+
+.accept-terms-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.existing-user-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.existing-user-link
+{
+    font-size: 1.6rem;
+    width: fit-content;
+    text-align: center;
+}
+
+.form-user-auth-submit-btn{
+    margin: 3rem 0 1rem 0;
+}
+
+.form-user-auth-submit-btn:disabled 
+{
+    pointer-events: none;
+    user-select: none;
+}
+
+.guest-user-auth-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.guest-user-auth-container .solid-primary-btn{
+    margin: 0;
+}
+
+@media only screen and (max-width:83.4375em){
+    .user-auth-page
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width:72.5em){
+    .user-auth-content-container
+    {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:63.4375em){
+    .user-auth-page
+    {
+        min-height: calc(100vh - 157.23px);
+    }
+}
