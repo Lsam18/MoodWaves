@@ -13,7 +13,6 @@
     "react-lottie": "^1.2.3",
     "react-redux": "^7.2.8",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.0",
     "redux": "^4.1.2",
     "redux-promise-middleware": "^6.1.2",
     "redux-thunk": "^2.4.1",
@@ -42,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
   }
 }
